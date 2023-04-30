@@ -176,3 +176,40 @@
   persian: دوره
 - english: Iteration
   persian: تکرار
+- english: Training Sample
+  persian: نمونه آموزشی
+- english: Validation Sample
+  persian: نمونه اعتبارسنجی
+- english: Test Sample
+  persian: نمونه آزمون
+- english: Loss Function
+  persian: تابع زیان
+- english: Cost Function
+  persian: تابع هزینه
+- english: Objective Function
+  persian: تابع هدف
+- english: Gradient
+  persian: گرادیان
+- english: Gradient Clipping
+  persian: برش گرادیان
+- english: Backpropagation
+  persian: پس‌انتشار
+- english: Forward Propagation
+  persian: پیش‌انتشار
+- english: Gradient Checking
+  persian: بررسی گرادیان
+- english: Gradient explosion
+  persian: انفجار گرادیان
+- english: Gradient vanishing
+  persian: محو شدن گرادیان
+- english: Gradient Boosting
+  persian: تقویت گرادیان 
+- english: Early Stopping
+  persian: متوقف‌سازی زودهنگام
+- english: Batch Normalization
+  persian: نرمال‌سازی دسته‌ای
+- english: Dropout
+  persian: رها‌سازی
+- english: Backpropagation Through Time
+  persian: پس‌انتشار در طول زمان
+  
