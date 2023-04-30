@@ -212,4 +212,23 @@
   persian: رها‌سازی
 - english: Backpropagation Through Time
   persian: پس‌انتشار در طول زمان
-  
+- english: Activation Function
+  persian: تابع فعال‌سازی
+- english: Rectified Linear Unit
+  persian: واحد خطی تصحیح‌شده
+- english: Sigmoid
+  persian: سیگموئید
+- english: Tanh
+  persian: تانژانت هیپربولیک
+- english: Softmax
+  persian: سافت‌مکس
+- english: Neuron
+  persian: نورون
+- english: Perceptron
+  persian: پرسپترون
+- english: Feedforward Neural Network
+  persian: شبکه عصبی پیش‌خوران
+- english: Multilayer Perceptron
+  persian: پرسپترون چندلایه
+- english: Deep Neural Network
+  persian: شبکه عصبی عمیق
