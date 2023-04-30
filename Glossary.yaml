@@ -110,3 +110,69 @@
   persian: کاهش بعد
 - english: Anomaly Detection
   persian: تشخیص ناهنجاری
+- english: Graphical Models
+  persian: مدل‌های گرافی
+- english: Ensemble Learning
+  persian: یادگیری شورایی
+- english: Deep Learning
+  persian: یادگیری عمیق
+- english: Neural Network
+  persian: شبکه عصبی
+- english: Convolutional Neural Network
+  persian: شبکه عصبی پیچشی
+- english: Recurrent Neural Network
+  persian: شبکه عصبی بازگشتی
+- english: Long Short-Term Memory
+  persian: حافظه کوتاه مدت بلند
+- english: Generative Adversarial Network
+  persian: شبکه مولد مقابله‌ای
+- english: Autoencoder
+  persian: خودرمزنگار
+- english: Transfer Learning
+  persian: یادگیری انتقالی
+- english: Natural Language Processing
+  persian: پردازش زبان طبیعی
+- english: Computer Vision
+  persian: بینایی ماشین
+- english: Time Series
+  persian: سری زمانی
+- english: Recommender System
+  persian: سامانه پیشنهاددهنده
+- english: Reinforcement Learning
+  persian: یادگیری تقویتی
+- english: Hyperparameter
+  persian: فراروند
+- english: Hyperparameter Tuning
+  persian: تنظیم فراروند
+- english: Hyperparameter Optimization
+  persian: بهینه‌سازی فراروند
+- english: Grid Search
+  persian: جستجوی شبکه‌ای
+- english: Random Search
+  persian: جستجوی تصادفی
+- english: Bayesian Optimization
+  persian: بهینه‌سازی بیزی
+- english: Gradient Descent
+  persian: گرادیان کاهشی
+- english: Stochastic Gradient Descent
+  persian: گرادیان کاهشی تصادفی
+- english: Mini-Batch Gradient Descent
+  persian: گرادیان کاهشی دسته‌ای
+- english: Learning Rate
+  persian: نرخ یادگیری
+- english: Learning Rate Decay
+  persian: کاهش نرخ یادگیری
+- english: Momentum
+  persian: شتاب
+- english: Nesterov Momentum
+  persian: شتاب نستروف
+- english: Adam
+  persian: آدام
+- english: Sample
+  persian: نمونه
+- english: Batch
+  persian: دسته
+- english: Epoch
+  persian: دوره
+- english: Iteration
+  persian: تکرار
