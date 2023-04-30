@@ -60,36 +60,5 @@
   persian: دودویی‌سازی ویژگی
 - english: Feature Hashing
   persian: درهم‌سازی ویژگی
-- english: Data Analysis
-  persian: تحلیل داده 
-- english: Data Visualization
-  persian: تصویرسازی داده
-- english: Data Exploration
-  persian: کاوش داده
-- english: Data Mining
-  persian: استخراج داده (داده‌کاوی)
-- english: Data Science
-  persian: علم داده
-- english: Data Scientist
-  persian: داده‌شناس
-- english: Data Analyst
-  persian: تحلیل‌گر داده
-- english: Data Engineer
-  persian: مهندس داده
-- english: Data Warehouse
-  persian: انبار داده
-- english: Data Lake
-  persian: دریاچه داده
-- english: Data Mart
-  persian: بازار داده
-- english: Data Pipeline
-  persian: خط لوله داده
-- english: Data Governance
-  persian: حاکمیت داده
-- english: Exploratory Data Analysis
-  persian: تحلیل اکتشافی داده 
-- english: Descriptive Statistics
-  persian: آمار توصیفی
-- english: Inferential Statistics
-  persian: آمار استنباطی
-
+- english: Adjacency Matrix	
+  persian: ماتریس مجاورت	
