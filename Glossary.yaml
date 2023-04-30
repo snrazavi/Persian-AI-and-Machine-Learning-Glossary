@@ -2,53 +2,7 @@
   persian: هوش مصنوعی
 - english: Machine Learning
   persian: یادگیری ماشین
-- english: Training Set
-  persian: مجموعه آموزشی
-- english: Validation Set
-  persian: مجموعه اعتبارسنجی
-- english: Test Set
-  persian: مجموعه آزمون
-- english: Cross Validation
-  persian: اعتبارسنجی ضربدری
-- english: K-Fold Cross Validation
-  persian: اعتبارسنجی ضربدری چند بخشی
-- english: Overfitting
-  persian: بیش‌برازش
-- english: Underfitting
-  persian: کم‌برازش
-- english: Bias
-  persian: سوگیری 
-- english: ِData Leakage
-  persian: نشت داده
-- english: Temporal Leakage
-  persian: نشت زمانی
-- english: Feature Leakage
-  persian: نشت ویژگی
-- english: Preprocess Leakage
-  persian: نشت پیش‌پردازش
-- english: Target Leakage
-  persian: نشت هدف
-- english: Data Snooping
-  persian: جستجوی داده
-- english: Data Cleaning
-  persian: پاک‌سازی داده
-- english: Data Preprocessing
-  persian: پیش‌پردازش داده
-- english: Data Augmentation
-  persian: داده‌افزایی
-- english: Feature Engineering
-  persian: مهندسی ویژگی
-- english: Feature Selection
-  persian: انتخاب ویژگی
-- english: Feature Extraction
-  persian: استخراج ویژگی
-- english: Feature Scaling
-  persian: مقیاس‌بندی ویژگی
-- english: Feature Normalization
-  persian: نرمال‌سازی ویژگی
-- english: Feature Standardization
-  persian: استانداردسازی ویژگی
-- english: Feature Encoding	
-  persian: رمزگذاری ویژگی
-- english: Feature Imputation
-  persian: تکمیل ویژگی
+- english: Accuracy	
+  persian: دقت
+- english: Adversarial	
+  persian: خصمانه
