@@ -92,4 +92,21 @@
   persian: آمار توصیفی
 - english: Inferential Statistics
   persian: آمار استنباطی
-
+- english: Supervised Learning
+  persian: یادگیری با ناظر
+- english: Unsupervised Learning
+  persian: یادگیری بدون ناظر
+- english: Semi-Supervised Learning
+  persian: یادگیری نیمه‌ناظر 
+- english: Reinforcement Learning
+  persian: یادگیری تقویتی
+- english: Classification
+  persian: طبقه‌بندی (دسته‌بندی)
+- english: Regression
+  persian: رگرسیون
+- english: Clustering
+  persian: خوشه‌بندی
+- english: Dimensionality Reduction
+  persian: کاهش بعد
+- english: Anomaly Detection
+  persian: تشخیص ناهنجاری
