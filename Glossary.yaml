@@ -52,3 +52,12 @@
   persian: رمزگذاری ویژگی
 - english: Feature Imputation
   persian: تکمیل ویژگی
+- english: Feature Discretization
+  persian: گسسته‌سازی ویژگی
+- english: Feature Binning
+  persian: گروه‌بندی ویژگی
+- english: Feature Binarization
+  persian: دودویی‌سازی ویژگی
+- english: Feature Hashing
+  persian: درهم‌سازی ویژگی
+  
