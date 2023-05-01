@@ -140,8 +140,6 @@
   persian: سری زمانی
 - english: Recommender System
   persian: سامانه پیشنهاددهنده
-- english: Reinforcement Learning
-  persian: یادگیری تقویتی
 - english: Hyperparameter
   persian: فراروند
 - english: Hyperparameter Tuning
@@ -918,3 +916,7 @@
   persian: معماری مدل
 - english: Model Architecture Design
   persian: طراحی معماری مدل
+- english: Random Forest
+  persian: جنگل تصادفی
+- english: Random Cut Forest
+  persian: جنگل برش تصادفی
