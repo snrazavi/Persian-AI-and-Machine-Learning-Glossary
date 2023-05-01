@@ -1,9 +1,16 @@
-# a function to sort the glossary terms in alphabetical order reading from a YAML file
+"""Sort the glossary terms in alphabetical order reading from a YAML file."""
 import yaml
 from collections import OrderedDict
 
 
 def sort_dicts_by_key(dicts, key, reverse=False):
+    """
+    Sort a list of dictionaries by a key
+    :param dicts: list of dictionaries
+    :param key: key to sort by
+    :param reverse: whether to sort in reverse order
+    :return: sorted list of dictionaries
+    """
     return sorted(dicts, key=lambda x: x[key], reverse=reverse)
 
 
