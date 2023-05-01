@@ -12,13 +12,21 @@ This repository serves as a collaborative platform for the AI and machine learni
 
 You can use this glossary as a reference when reading or writing about AI and machine learning in Persian. To find a translation for a specific term, simply browse the repository or use the search functionality to locate the term and its corresponding Persian translation.
 
+### Glossary Files
+
+The glossary is available in the following formats:
+
+- `Glossary.yaml`: The main glossary file containing terms and their translations in no particular order.
+- `Glossary_sorted_en.yaml`: The glossary sorted alphabetically by English terms.
+- `Glossary_sorted_fa.yaml`: The glossary sorted alphabetically by Persian terms.
+
 ## Contributing
 
 We encourage you to contribute to this project by suggesting new terms, providing translations, or refining existing translations. Your contributions will help make this glossary more comprehensive and valuable for the Persian-speaking AI and machine learning community. To contribute, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch with a descriptive name (e.g., add-term-xyz or refine-translation-abc).
-3. Add your suggested term(s) and/or translation(s) to the appropriate file(s) (only the **Glossary.yaml** file which is not sorted) or create a new file if necessary.
+3. Add your suggested term(s) and/or translation(s) to the appropriate file(s) (only the `Glossary.yaml` file which is not sorted) or create a new file if necessary.
 4. Commit your changes with a clear and concise message describing your contribution.
 5. Create a pull request, explaining the changes you've made and their importance.
 
