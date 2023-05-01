@@ -20,8 +20,7 @@ def sort_glossary(language='en'):
     :param language: language of the glossary
     :return: None
     """
-    # make sure the language is either 'en' or 'fa'
-    assert language in ['en', 'fa'], "language should be either 'en' or 'fa'"
+    # read the glossary from a YAML file and sort it
     with open('Glossary.yaml', 'r', encoding='utf-8') as f:
             glossary = yaml.load(f, Loader=yaml.FullLoader)
             if language == 'en':
@@ -31,10 +30,10 @@ def sort_glossary(language='en'):
                 sorted_glossary = sort_dicts_by_key(glossary, 'persian')
             else:
                 raise ValueError('language should be either "en" or "fa"')
-        
+    
+    # write the sorted glossary to a new YAML file
     output_filename = f"Glossary_sorted_{language}.yaml"
     with open(output_filename, 'w', encoding='utf-8') as f:
-        # write the sorted glossary to a YAML file
         yaml.dump(sorted_glossary, f, allow_unicode=True)
 
 
