@@ -15,7 +15,7 @@ We encourage you to contribute to this project by suggesting new terms, providin
 
 1. Fork the repository.
 2. Create a new branch with a descriptive name (e.g., add-term-xyz or refine-translation-abc).
-3. Add your suggested term(s) and/or translation(s) to the appropriate file(s) (the YAML file) or create a new file if necessary.
+3. Add your suggested term(s) and/or translation(s) to the appropriate file(s) (only the **Glossary.yaml** file which is not sorted) or create a new file if necessary.
 4. Commit your changes with a clear and concise message describing your contribution.
 5. Create a pull request, explaining the changes you've made and their importance.
 
