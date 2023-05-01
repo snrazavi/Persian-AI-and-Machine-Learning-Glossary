@@ -24,7 +24,6 @@ def sort_glossary(language='en'):
     with open('Glossary.yaml', 'r', encoding='utf-8') as f:
             glossary = yaml.load(f, Loader=yaml.FullLoader)
             if language == 'en':
-                # sort each dictionary entry by the English term
                 sorted_glossary = sort_dicts_by_key(glossary, 'english')
             elif language == 'fa':
                 sorted_glossary = sort_dicts_by_key(glossary, 'persian')
