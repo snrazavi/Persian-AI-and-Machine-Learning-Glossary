@@ -722,4 +722,23 @@
   persian: گره لبه
 - english: Edge Server
   persian: سرور لبه
-  
+- english: K-Nearest Neighbors
+  persian: K-نزدیک‌ترین همسایه‌ها
+- english: Binary Classification
+  persian: طبقه‌بندی دودویی
+- english: Binary Classifier
+  persian: طبقه‌بند دودویی
+- english: Bagging
+  persian: کیسه‌بندی (بگینگ) (جمع‌آوری نمونه)
+- english: Bootstrap Aggregation
+  persian: جمع‌آوری بوت‌استرپ
+- english: Bootstrap
+  persian: بوت‌استرپ
+- english: Bootstrap Sample
+  persian: نمونه بوت‌استرپ
+- english: Boosting
+  persian:  بوستینگ (وزن‌افزایی) (افزایش وزن)
+- english: Boosting Algorithm
+  persian: الگوریتم بوستینگ (الگوریتم تقویت‌کننده) (الگوریتم وزن‌افزایی)
+- english: Boosting Classifier
+  persian: طبقه‌بند بوستینگ (طبقه‌بند تقویت‌کننده) (طبقه‌بند وزن‌افزا)
