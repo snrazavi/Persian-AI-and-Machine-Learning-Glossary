@@ -2,7 +2,7 @@
 import yaml
 
 
-def sort_dicts_by_key(dicts, key, reverse=False):
+def sort_dicts_by_key(dicts: list[dict], key: str, reverse: bool=False):
     """
     Sort a list of dictionaries by a key
     :param dicts: list of dictionaries
@@ -13,7 +13,7 @@ def sort_dicts_by_key(dicts, key, reverse=False):
     return sorted(dicts, key=lambda x: x[key], reverse=reverse)
 
 
-def read_glossary(glossary_file='Glossary.yaml'):
+def read_glossary(glossary_file: str ='Glossary.yaml'):
     """
     Read the glossary from a YAML file
     :param glossary_file: YAML file containing the glossary
@@ -24,7 +24,7 @@ def read_glossary(glossary_file='Glossary.yaml'):
     return glossary
 
 
-def write_glossary(glossary, glossary_file):
+def write_glossary(glossary: list[dict], glossary_file: str):
     """
     Write the glossary to a YAML file
     :param glossary: glossary
@@ -35,7 +35,7 @@ def write_glossary(glossary, glossary_file):
         yaml.dump(glossary, file, allow_unicode=True)
 
 
-def sort_glossary(language='en'):
+def sort_glossary(language: str='en'):
     """
     Sort the glossary terms in alphabetical order reading from a YAML file
     and write the sorted glossary to a new YAML file
