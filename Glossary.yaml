@@ -18,7 +18,7 @@
   persian: کم‌برازش
 - english: Bias
   persian: سوگیری 
-- english: ِData Leakage
+- english: Data Leakage
   persian: نشت داده
 - english: Temporal Leakage
   persian: نشت زمانی
@@ -742,3 +742,90 @@
   persian: الگوریتم بوستینگ (الگوریتم تقویت‌کننده) (الگوریتم وزن‌افزایی)
 - english: Boosting Classifier
   persian: طبقه‌بند بوستینگ (طبقه‌بند تقویت‌کننده) (طبقه‌بند وزن‌افزا)
+- english: Image Classification
+  persian: طبقه‌بندی تصویر
+- english: Image Processing
+  persian: پردازش تصویر
+- english: Image Recognition
+  persian: بازشناسی تصویر
+- english: Image Segmentation
+  persian: تقسیم‌بندی تصویر
+- english: Voice Recognition
+  persian: بازشناسی صدا
+- english: Speech Recognition
+  persian: بازشناسی گفتار
+- english: Speech Processing
+  persian: پردازش گفتار
+- english: Speech Synthesis
+  persian: ترکیب گفتار
+- english: Speech Generation
+  persian: تولید گفتار
+- english: Speech-to-Text
+  persian: گفتار به متن
+- english: Text-to-Speech
+  persian: متن به گفتار
+- english: Text Classification
+  persian: طبقه‌بندی متن
+- english: Text Processing
+  persian: پردازش متن
+- english: Sentiment Analysis
+  persian: تحلیل احساسات
+- english: Text Generation
+  persian: تولید متن
+- english: Text Summarization
+  persian: خلاصه‌سازی متن
+- english: Text-to-Text
+  persian: متن به متن
+- english: Text-to-Image
+  persian: متن به تصویر
+- english: Image-to-Text
+  persian: تصویر به متن
+- english: Text-to-Video
+  persian: متن به ویدیو
+- english: Video-to-Text 
+  persian: ویدیو به متن
+- english: Text-to-Audio
+  persian: متن به صدا
+- english: Audio-to-Text
+  persian: صدا به متن
+- english: Text-to-Text Translation
+  persian: ترجمه متن به متن
+- english: Sequence-to-Sequence
+  persian: دنباله به دنباله
+- english: Sequence-to-Sequence Translation
+  persian: ترجمه دنباله به دنباله
+- english: Sequence-to-Sequence Model
+  persian: مدل دنباله به دنباله
+- english: Object Detection
+  persian: تشخیص اشیا
+- english: Object Recognition
+  persian: بازشناسی اشیا
+- english: Object Localization
+  persian: محل‌یابی اشیا
+- english: Transformer
+  persian: تبدیل‌گر
+- english: Transformer Model
+  persian: مدل تبدیل‌گر
+- english: Transformer Architecture
+  persian: معماری تبدیل‌گر
+- english: Transformer Encoder
+  persian: رمزگذار تبدیل‌گر
+- english: Transformer Decoder
+  persian: رمزگشای تبدیل‌گر
+- english: Transformer Attention
+  persian: توجه تبدیل‌گر
+- english: Transformer Self-Attention
+  persian: خودتوجه تبدیل‌گر
+- english: Transformer Multi-Head Attention
+  persian: توجه چندسر تبدیل‌گر
+- english: Transformer Positional Encoding
+  persian: رمزگذاری موقعیتی تبدیل‌گر
+- english: Transformer Positional Embedding
+  persian: جاسازی موقعیتی تبدیل‌گر
+- english: Generative Pre-Trained Transformer
+  persian: تبدیل‌گر پیش‌آموزش‌دیده مولد
+- english: Attention Mechanism
+  persian: سازوکار توجه
+- english: Attention Layer
+  persian: لایه توجه
+- 
