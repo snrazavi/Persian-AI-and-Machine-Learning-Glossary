@@ -13,6 +13,28 @@ def sort_dicts_by_key(dicts, key, reverse=False):
     return sorted(dicts, key=lambda x: x[key], reverse=reverse)
 
 
+def read_glossary(glossary_file='Glossary.yaml'):
+    """
+    Read the glossary from a YAML file
+    :param glossary_file: YAML file containing the glossary
+    :return: glossary
+    """
+    with open(glossary_file, 'r', encoding='utf-8') as file:
+        glossary = yaml.load(file, Loader=yaml.FullLoader)
+    return glossary
+
+
+def write_glossary(glossary, glossary_file):
+    """
+    Write the glossary to a YAML file
+    :param glossary: glossary
+    :param glossary_file: YAML file to write the glossary to
+    :return: None
+    """
+    with open(glossary_file, 'w', encoding='utf-8') as file:
+        yaml.dump(glossary, file, allow_unicode=True)
+
+
 def sort_glossary(language='en'):
     """
     Sort the glossary terms in alphabetical order reading from a YAML file
@@ -20,20 +42,20 @@ def sort_glossary(language='en'):
     :param language: language of the glossary
     :return: None
     """
-    # read the glossary from a YAML file and sort it
-    with open('Glossary.yaml', 'r', encoding='utf-8') as file:
-        glossary = yaml.load(file, Loader=yaml.FullLoader)
-        if language == 'en':
-            sorted_glossary = sort_dicts_by_key(glossary, 'english')
-        elif language == 'fa':
-            sorted_glossary = sort_dicts_by_key(glossary, 'persian')
-        else:
-            raise ValueError('language should be either "en" or "fa"')
+    # read the glossary from a YAML file
+    glossary = read_glossary('Glossary.yaml')
+
+    # sort the glossary terms in alphabetical order based on the language
+    if language == 'en':
+        sorted_glossary = sort_dicts_by_key(glossary, 'english')
+    elif language == 'fa':
+        sorted_glossary = sort_dicts_by_key(glossary, 'persian')
+    else:
+        raise ValueError('language should be either "en" or "fa"')
 
     # write the sorted glossary to a new YAML file
     output_filename = f"Glossary_sorted_{language}.yaml"
-    with open(output_filename, 'w', encoding='utf-8') as file:
-        yaml.dump(sorted_glossary, file, allow_unicode=True)
+    write_glossary(sorted_glossary, output_filename)
 
 
 if __name__ == '__main__':
