@@ -838,3 +838,11 @@
   persian: جاسازی تک-یک
 - english: One-Hot Vector Embedding
   persian: جاسازی بردار تک-یک
+- english: Word Embedding
+  persian: جاسازی کلمه
+- english: Word2Vec
+  persian: کلمه به بردار
+- english: Word2Vec Embedding
+  persian: جاسازی کلمه به بردار
+- english: Word2Vec Vector Embedding
+  persian: جاسازی بردار کلمه به بردار
