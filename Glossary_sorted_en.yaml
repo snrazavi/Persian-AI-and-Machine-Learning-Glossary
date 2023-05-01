@@ -274,6 +274,8 @@
   persian: جریان داده
 - english: Dataframe
   persian: چارچوب داده
+- english: Decision Tree
+  persian: درخت تصمیم
 - english: Deep Learning
   persian: یادگیری عمیق
 - english: Deep Neural Network
@@ -395,7 +397,7 @@
 - english: Forward Propagation
   persian: پیش‌انتشار
 - english: Generative Adversarial Network
-  persian: شبکه مولد مقابله‌ای
+  persian: شبکه مولد خصمانه
 - english: Generative Pre-Trained Transformer
   persian: تبدیل‌گر پیش‌آموزش‌دیده مولد
 - english: Gradient
@@ -517,7 +519,7 @@
 - english: Learning Rate Decay
   persian: کاهش نرخ یادگیری
 - english: Long Short-Term Memory
-  persian: حافظه کوتاه مدت بلند
+  persian: حافظه بلند کوتاه‌مدت
 - english: Loss Function
   persian: تابع زیان
 - english: Low-Rank Matrix Approximation
@@ -532,6 +534,10 @@
   persian: قابل نگهداری
 - english: Manhattan Distance
   persian: فاصله منهتن
+- english: Markov Chain
+  persian: زنجیره مارکوف
+- english: Markov Desicion Process
+  persian: فرایند تصمیم مارکوف
 - english: Mean Absolute Deviation
   persian: انحراف مطلق میانگین
 - english: Mean Absolute Error
@@ -712,6 +718,12 @@
   persian: مجموعه‌داده اختلال‌دار
 - english: Purturbed Sample
   persian: نمونه اختلال‌دار
+- english: Q-Learning
+  persian: یادگیری Q
+- english: Q-Learning Agent
+  persian: عامل یادگیری Q
+- english: Q-Learning Algorithm
+  persian: الگوریتم یادگیری Q
 - english: Random Cut Forest
   persian: جنگل برش تصادفی
 - english: Random Forest
@@ -730,8 +742,12 @@
   persian: شبکه عصبی برگشتی
 - english: Regression
   persian: رگرسیون
+- english: Regularization
+  persian: تنظیم‌گری (تنظیم)
 - english: Reinforcement Learning
   persian: یادگیری تقویتی
+- english: Reinforcement Learning with Human Feedback
+  persian: یادگیری تقویتی با بازخورد انسانی
 - english: Reliability
   persian: اعتماد‌پذیری
 - english: Reliable Model
@@ -767,7 +783,7 @@
 - english: Scalable
   persian: مقیاس‌پذیر
 - english: Semi-Supervised Learning
-  persian: یادگیری نیمه‌ناظر
+  persian: یادگیری نیمه‌نظارت‌شده
 - english: Semi-structured Data
   persian: داده نیمه‌ساختارمند
 - english: Sentiment Analysis
@@ -813,7 +829,11 @@
 - english: Structured Data
   persian: داده ساختارمند
 - english: Supervised Learning
-  persian: یادگیری با ناظر
+  persian: یادگیری نظارت‌شده
+- english: Support Vector
+  persian: بردار پشتیبان
+- english: Support Vector Machine
+  persian: ماشین بردار پشتیبان
 - english: Systematic Sampling
   persian: نمونه‌برداری سامانه‌ای
 - english: Tanh
@@ -893,7 +913,7 @@
 - english: Unstructured Data
   persian: داده بی‌ساختار
 - english: Unsupervised Learning
-  persian: یادگیری بدون ناظر
+  persian: یادگیری بدون نظارت
 - english: Validation Sample
   persian: نمونه اعتبارسنجی
 - english: Validation Set

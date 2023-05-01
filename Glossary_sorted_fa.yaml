@@ -62,6 +62,8 @@
   persian: الگوریتم بوستینگ (الگوریتم تقویت‌کننده) (الگوریتم وزن‌افزایی)
 - english: Model Prediction Algorithm
   persian: الگوریتم پیش‌بینی مدل
+- english: Q-Learning Algorithm
+  persian: الگوریتم یادگیری Q
 - english: F1 Score
   persian: امتیاز F1
 - english: Model Scoring
@@ -128,6 +130,8 @@
   persian: بردار تک-یک
 - english: Feature Vector
   persian: بردار ویژگی
+- english: Support Vector
+  persian: بردار پشتیبان
 - english: Gradient Checking
   persian: بررسی گرادیان
 - english: Gradient Clipping
@@ -308,6 +312,8 @@
   persian: تنظیم فراروند
 - english: Model Tuning
   persian: تنظیم مدل
+- english: Regularization
+  persian: تنظیم‌گری (تنظیم)
 - english: Transformer Attention
   persian: توجه تبدیل‌گر
 - english: Transformer Multi-Head Attention
@@ -357,7 +363,7 @@
 - english: Random Forest
   persian: جنگل تصادفی
 - english: Long Short-Term Memory
-  persian: حافظه کوتاه مدت بلند
+  persian: حافظه بلند کوتاه‌مدت
 - english: Data Governance
   persian: حاکمیت داده
 - english: Data Pipeline
@@ -414,6 +420,8 @@
   persian: داده‌شناس
 - english: Data wrangling
   persian: داده‌پردازی
+- english: Decision Tree
+  persian: درخت تصمیم
 - english: Feature Hashing
   persian: درهم‌سازی ویژگی
 - english: Data Lake
@@ -456,6 +464,8 @@
   persian: روش پیش‌بینی مدل
 - english: Regression
   persian: رگرسیون
+- english: Markov Chain
+  persian: زنجیره مارکوف
 - english: Attention Mechanism
   persian: سازوکار توجه
 - english: Adaptable
@@ -503,7 +513,7 @@
 - english: Convolutional Neural Network
   persian: شبکه عصبی پیچشی
 - english: Generative Adversarial Network
-  persian: شبکه مولد مقابله‌ای
+  persian: شبکه مولد خصمانه
 - english: Momentum
   persian: شتاب
 - english: Nesterov Momentum
@@ -532,6 +542,8 @@
   persian: طراحی معماری مدل
 - english: Latent Factor
   persian: عامل نهان
+- english: Q-Learning Agent
+  persian: عامل یادگیری Q
 - english: Data Science
   persian: علم داده
 - english: Data Stream Processing Operation
@@ -542,6 +554,8 @@
   persian: فاصله منهتن
 - english: Hyperparameter
   persian: فراروند
+- english: Markov Desicion Process
+  persian: فرایند تصمیم مارکوف
 - english: Model Compression
   persian: فشرده‌سازی مدل
 - english: Embedding Space
@@ -582,6 +596,8 @@
   persian: ماتریس سطری
 - english: Adjacency Matrix
   persian: ماتریس همسایگی
+- english: Support Vector Machine
+  persian: ماشین بردار پشتیبان
 - english: Boolean Variable
   persian: متغیر بولی
 - english: Ordinal Variable
@@ -892,16 +908,18 @@
   persian: گسسته‌سازی ویژگی
 - english: Speech-to-Text
   persian: گفتار به متن
+- english: Q-Learning
+  persian: یادگیری Q
 - english: Transfer Learning
   persian: یادگیری انتقالی
-- english: Supervised Learning
-  persian: یادگیری با ناظر
 - english: Unsupervised Learning
-  persian: یادگیری بدون ناظر
+  persian: یادگیری بدون نظارت
 - english: Online Learning
   persian: یادگیری برخط
 - english: Reinforcement Learning
   persian: یادگیری تقویتی
+- english: Reinforcement Learning with Human Feedback
+  persian: یادگیری تقویتی با بازخورد انسانی
 - english: Ensemble Learning
   persian: یادگیری شورایی
 - english: Deep Learning
@@ -918,5 +936,7 @@
   persian: یادگیری ماشین قابل توضیح
 - english: Continual Learning
   persian: یادگیری مداوم
+- english: Supervised Learning
+  persian: یادگیری نظارت‌شده
 - english: Semi-Supervised Learning
-  persian: یادگیری نیمه‌ناظر
+  persian: یادگیری نیمه‌نظارت‌شده
