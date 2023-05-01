@@ -848,3 +848,73 @@
   persian: جاسازی کلمه به بردار
 - english: Word2Vec Vector Embedding
   persian: جاسازی بردار کلمه به بردار
+- english: Low-Rank Matrix Factorization
+  persian: تجزیه ماتریس کم‌رتبه
+- english: Low-Rank Matrix Approximation
+  persian: تقریب ماتریس کم‌رتبه
+- english: Model Monitoring
+  persian: پایش مدل
+- english: Model Performance Monitoring
+  persian: پایش عملکرد مدل
+- english: Model Performance Evaluation
+  persian: ارزیابی عملکرد مدل
+- english: Model Performance Metrics
+  persian: معیارهای عملکرد مدل
+- english: Model Optimization
+  persian: بهینه‌سازی مدل
+- english: Model Obseravability
+  persian: مشاهده‌پذیری مدل
+- english: Observability
+  persian: مشاهده‌پذیری
+- english: Continual Learning
+  persian: یادگیری مداوم
+- english: Shadow Model
+  persian: مدل سایه
+- english: Shadow Deployment
+  persian: استقرار سایه
+- english: A/B Testing
+  persian: آزمایش A/B
+- english: A/B Test
+  persian: آزمایش A/B
+- english: Canary Deployment
+  persian: استقرار قناری
+- english: Canary Release
+  persian: انتشار قناری
+- english: Canary Testing
+  persian: آزمایش قناری
+- english: Canary Rollout
+  persian: پخش قناری
+- english: Data Center
+  persian: مرکز داده
+- english: Data Center Migration
+  persian: مهاجرت مرکز داده
+- english: Workflow
+  persian: کارروند
+- english: Workflow Management
+  persian: مدیریت کارروند
+- english: Feature Store
+  persian: انبار ویژگی
+- english: Model Store
+  persian: انبار مدل
+- english: End-to-End Machine Learning
+  persian: یادگیری ماشین ابتدا به انتها
+- english: Responsible AI
+  persian: هوش مصنوعی مسؤولانه
+- english: Human-in-the-Loop
+  persian: انسان در حلقه
+- english: Human-in-the-Loop Machine Learning
+  persian: یادگیری ماشین انسان در حلقه
+- english: Human-in-the-Loop AI
+  persian: هوش مصنوعی انسان در حلقه
+- english: Human-in-the-Loop ML
+  persian: یادگیری ماشین انسان در حلقه
+- english: Human-Centered AI
+  persian: هوش مصنوعی انسان‌محور
+- english: Artificial General Intelligence
+  persian: هوش عمومی مصنوعی
+- english: Artificial Super Intelligence
+  persian: ابرهوش مصنوعی
+- english: Model Architecture
+  persian: معماری مدل
+- english: Model Architecture Design
+  persian: طراحی معماری مدل
