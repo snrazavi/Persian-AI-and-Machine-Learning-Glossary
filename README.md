@@ -24,4 +24,4 @@ When suggesting a new term or translation, please ensure that it is relevant to 
 ## Feedback and Suggestions
 If you have any questions, feedback, or suggestions, please feel free to open an issue or reach out to us through the repository's discussions section. We value your input and look forward to collaborating with you on this project.
 
-Let's work together to make AI and machine learning more accessible to the Persian-speaking community!
+**Let's work together to make AI and machine learning more accessible to the Persian-speaking community!**
