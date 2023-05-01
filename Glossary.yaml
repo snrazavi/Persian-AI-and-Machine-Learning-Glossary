@@ -828,4 +828,13 @@
   persian: سازوکار توجه
 - english: Attention Layer
   persian: لایه توجه
-- 
+- english: One-Hot Encoding
+  persian: رمزگذاری تک-یک
+- english: One-Hot Vector
+  persian: بردار تک-یک
+- english: One-Hot Representation
+  persian: نمایش تک-یک
+- english: One-Hot Embedding
+  persian: جاسازی تک-یک
+- english: One-Hot Vector Embedding
+  persian: جاسازی بردار تک-یک
