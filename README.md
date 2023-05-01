@@ -1,7 +1,5 @@
 # Persian-AI-and-Machine-Learning-Glossary
 
-Suggested Persian equivalents words for technical words in AI and ML
-
 ## Introduction
 
 Welcome to the Persian AI and Machine Learning Glossary repository! This project aims to provide a comprehensive and up-to-date collection of Persian translations for technical terms and concepts in the field of artificial intelligence and machine learning. Our goal is to facilitate better communication and understanding of these complex topics for Persian-speaking learners, researchers, and practitioners.
