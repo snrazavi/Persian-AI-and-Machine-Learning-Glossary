@@ -1,3 +1,7 @@
+- english: A/B Test
+  persian: آزمایش A/B
+- english: A/B Testing
+  persian: آزمایش A/B
 - english: Accuracy
   persian: دقت
 - english: Activation Function
@@ -8,10 +12,16 @@
   persian: قابلیت سازگاری (سازگاری‌پذیری)
 - english: Adaptable
   persian: سازگار (سازگاری‌پذیر)
+- english: Adjacency Matrix
+  persian: ماتریس همسایگی
 - english: Anomaly Detection
   persian: تشخیص ناهنجاری
+- english: Artificial General Intelligence
+  persian: هوش عمومی مصنوعی
 - english: Artificial Intelligence
   persian: هوش مصنوعی
+- english: Artificial Super Intelligence
+  persian: ابرهوش مصنوعی
 - english: Attention Layer
   persian: لایه توجه
 - english: Attention Mechanism
@@ -72,6 +82,14 @@
   persian: جمع‌آوری بوت‌استرپ
 - english: Bootstrap Sample
   persian: نمونه بوت‌استرپ
+- english: Canary Deployment
+  persian: استقرار قناری
+- english: Canary Release
+  persian: انتشار قناری
+- english: Canary Rollout
+  persian: پخش قناری
+- english: Canary Testing
+  persian: آزمایش قناری
 - english: Categorical Feature
   persian: ویژگی دسته‌بندی‌شده
 - english: Categorical Variable
@@ -104,6 +122,8 @@
   persian: ماتریس درهم‌ریختگی
 - english: Content-Based Filtering
   persian: فیلترینگ مبتنی بر محتوا
+- english: Continual Learning
+  persian: یادگیری مداوم
 - english: Continuous Feature
   persian: ویژگی پیوسته
 - english: Continuous Variable
@@ -130,6 +150,10 @@
   persian: تحلیل‌گر داده
 - english: Data Augmentation
   persian: داده‌افزایی
+- english: Data Center
+  persian: مرکز داده
+- english: Data Center Migration
+  persian: مهاجرت مرکز داده
 - english: Data Cleaning
   persian: پاک‌سازی داده
 - english: Data Concept Drift
@@ -298,6 +322,8 @@
   persian: فضای تعبیه
 - english: Embedding Vector
   persian: بردار تعبیه
+- english: End-to-End Machine Learning
+  persian: یادگیری ماشین ابتدا به انتها
 - english: Ensemble Learning
   persian: یادگیری شورایی
 - english: Epoch
@@ -360,6 +386,8 @@
   persian: فضای ویژگی
 - english: Feature Standardization
   persian: استانداردسازی ویژگی
+- english: Feature Store
+  persian: انبار ویژگی
 - english: Feature Vector
   persian: بردار ویژگی
 - english: Feedforward Neural Network
@@ -388,6 +416,16 @@
   persian: مدل‌های گرافی
 - english: Grid Search
   persian: جستجوی شبکه‌ای
+- english: Human-Centered AI
+  persian: هوش مصنوعی انسان‌محور
+- english: Human-in-the-Loop
+  persian: انسان در حلقه
+- english: Human-in-the-Loop AI
+  persian: هوش مصنوعی انسان در حلقه
+- english: Human-in-the-Loop ML
+  persian: یادگیری ماشین انسان در حلقه
+- english: Human-in-the-Loop Machine Learning
+  persian: یادگیری ماشین انسان در حلقه
 - english: Hybrid Recommender System
   persian: سامانه پیشنهاددهنده ترکیبی
 - english: Hyperparameter
@@ -482,6 +520,10 @@
   persian: حافظه کوتاه مدت بلند
 - english: Loss Function
   persian: تابع زیان
+- english: Low-Rank Matrix Approximation
+  persian: تقریب ماتریس کم‌رتبه
+- english: Low-Rank Matrix Factorization
+  persian: تجزیه ماتریس کم‌رتبه
 - english: Machine Learning
   persian: یادگیری ماشین
 - english: Maintainability
@@ -530,6 +572,10 @@
   persian: مقدار گم‌شده
 - english: Missing Value Imputation
   persian: تکمیل مقدار گم‌شده
+- english: Model Architecture
+  persian: معماری مدل
+- english: Model Architecture Design
+  persian: طراحی معماری مدل
 - english: Model Compression
   persian: فشرده‌سازی مدل
 - english: Model Deployment
@@ -538,6 +584,18 @@
   persian: ارزیابی مدل
 - english: Model Inference
   persian: استنتاج مدل
+- english: Model Monitoring
+  persian: پایش مدل
+- english: Model Obseravability
+  persian: مشاهده‌پذیری مدل
+- english: Model Optimization
+  persian: بهینه‌سازی مدل
+- english: Model Performance Evaluation
+  persian: ارزیابی عملکرد مدل
+- english: Model Performance Metrics
+  persian: معیارهای عملکرد مدل
+- english: Model Performance Monitoring
+  persian: پایش عملکرد مدل
 - english: Model Prediction
   persian: پیش‌بینی مدل
 - english: Model Prediction API
@@ -564,6 +622,8 @@
   persian: انتخاب مدل
 - english: Model Serving
   persian: سرویس‌دهی مدل
+- english: Model Store
+  persian: انبار مدل
 - english: Model Testing
   persian: آزمون مدل
 - english: Model Training
@@ -600,6 +660,8 @@
   persian: تابع هدف
 - english: Objective Function
   persian: تابع هدف
+- english: Observability
+  persian: مشاهده‌پذیری
 - english: One-Hot Embedding
   persian: جاسازی تک-یک
 - english: One-Hot Encoding
@@ -650,6 +712,10 @@
   persian: مجموعه‌داده اختلال‌دار
 - english: Purturbed Sample
   persian: نمونه اختلال‌دار
+- english: Random Cut Forest
+  persian: جنگل برش تصادفی
+- english: Random Forest
+  persian: جنگل تصادفی
 - english: Random Search
   persian: جستجوی تصادفی
 - english: Recall
@@ -666,8 +732,6 @@
   persian: رگرسیون
 - english: Reinforcement Learning
   persian: یادگیری تقویتی
-- english: Reinforcement Learning
-  persian: یادگیری تقویتی
 - english: Reliability
   persian: اعتماد‌پذیری
 - english: Reliable Model
@@ -678,6 +742,8 @@
   persian: بازتولیدپذیر
 - english: Reservoir Sampling
   persian: نمونه‌برداری مخزنی
+- english: Responsible AI
+  persian: هوش مصنوعی مسؤولانه
 - english: Root Mean Squared Error
   persian: خطای ریشه میانگین مربعات
 - english: Row-major Format
@@ -712,6 +778,10 @@
   persian: مدل دنباله به دنباله
 - english: Sequence-to-Sequence Translation
   persian: ترجمه دنباله به دنباله
+- english: Shadow Deployment
+  persian: استقرار سایه
+- english: Shadow Model
+  persian: مدل سایه
 - english: Sigmoid
   persian: سیگموئید
 - english: Simple Random Sampling
@@ -846,3 +916,7 @@
   persian: جاسازی کلمه به بردار
 - english: Word2Vec Vector Embedding
   persian: جاسازی بردار کلمه به بردار
+- english: Workflow
+  persian: کارروند
+- english: Workflow Management
+  persian: مدیریت کارروند
