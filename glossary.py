@@ -67,7 +67,3 @@ class Glossary:
             raise ValueError('language should be either "en" or "fa"')
 
         return sorted_glossary
-
-        # # write the sorted glossary to a new YAML file
-        # output_filename = f"Glossary_sorted_{language}.yaml"
-        # self.write_glossary(sorted_glossary, output_filename)
