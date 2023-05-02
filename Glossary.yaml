@@ -71,9 +71,9 @@
 - english: Data Exploration
   persian: کاوش داده
 - english: Data Mining
-  persian: استخراج داده (داده‌کاوی)
+  persian: داده‌کاوی
 - english: Data Science
-  persian: علم داده
+  persian: علم داده؛ داده‌شناسی
 - english: Data Scientist
   persian: داده‌شناس
 - english: Data Analyst
@@ -91,7 +91,7 @@
 - english: Data Governance
   persian: حاکمیت داده
 - english: Exploratory Data Analysis
-  persian: تحلیل اکتشافی داده 
+  persian: تحلیل داده کاوشی
 - english: Descriptive Statistics
   persian: آمار توصیفی
 - english: Inferential Statistics
@@ -105,9 +105,21 @@
 - english: Reinforcement Learning
   persian: یادگیری تقویتی
 - english: Classification
-  persian: طبقه‌بندی (دسته‌بندی)
+  persian: طبقه‌بندی؛ دسته‌بندی
 - english: Regression
   persian: رگرسیون
+- english: Linear Regression
+  persian: رگرسیون خطی
+- english: Logistic Regression
+  persian: رگرسیون لجستیکی
+- english: Multinomial Logistic Regression
+  persian: رگرسیون لجستیکی چندجمله‌ای
+- english: Polynomial Regression
+  persian: رگرسیون چندجمله‌ای
+- english: Multivariate Regression
+  persian: رگرسیون چندمتغیره
+- english: Multivariate Linear Regression
+  persian: رگرسیون خطی چندمتغیره
 - english: Clustering
   persian: خوشه‌بندی
 - english: Dimensionality Reduction
@@ -116,10 +128,12 @@
   persian: تشخیص ناهنجاری
 - english: Graphical Models
   persian: مدل‌های گرافی
+- english: Probabilistic Graphical Models
+  persian: مدل‌های گرافی احتمالاتی
 - english: Ensemble Learning
   persian: یادگیری شورایی
 - english: Deep Learning
-  persian: یادگیری عمیق
+  persian: یادگیری عمیق؛ یادگیری ژرف
 - english: Neural Network
   persian: شبکه عصبی
 - english: Convolutional Neural Network
@@ -129,7 +143,7 @@
 - english: Long Short-Term Memory
   persian: حافظه بلند کوتاه‌مدت
 - english: Generative Adversarial Network
-  persian: شبکه مولد خصمانه
+  persian: شبکه مولد خصمانه؛ شبکه مولد رقابتی
 - english: Autoencoder
   persian: خودرمزنگار
 - english: Transfer Learning
@@ -139,7 +153,7 @@
 - english: Computer Vision
   persian: بینایی ماشین
 - english: Time Series
-  persian: سری زمانی
+  persian: سری زمانی؛ دنباله زمانی
 - english: Recommender System
   persian: سامانه پیشنهاددهنده
 - english: Hyperparameter
@@ -149,7 +163,7 @@
 - english: Hyperparameter Optimization
   persian: بهینه‌سازی فراروند
 - english: Grid Search
-  persian: جستجوی شبکه‌ای
+  persian: جستجوی شبکه‌ای؛ جستجوی توری
 - english: Random Search
   persian: جستجوی تصادفی
 - english: Bayesian Optimization
@@ -165,7 +179,7 @@
 - english: Learning Rate Decay
   persian: کاهش نرخ یادگیری
 - english: Momentum
-  persian: شتاب
+  persian: شتاب؛ ممنتوم
 - english: Nesterov Momentum
   persian: شتاب نستروف
 - english: Adam
@@ -239,7 +253,7 @@
 - english: Multilayer Perceptron
   persian: پرسپترون چندلایه
 - english: Deep Neural Network
-  persian: شبکه عصبی عمیق
+  persian: شبکه عصبی عمیق؛ شبکه عصبی ژرف
 - english: Recursive Neural Network
   persian: شبکه عصبی برگشتی
 - english: Bidirectional Recurrent Neural Network
@@ -259,9 +273,9 @@
 - english: Cold Start
   persian: راه‌اندازی سرد
 - english: Collaborative Filtering
-  persian: فیلترینگ همکارانه
+  persian: گزینش همکارانه
 - english: Content-Based Filtering
-  persian: فیلترینگ مبتنی بر محتوا
+  persian: گزینش محتوا-محور
 - english: Hybrid Recommender System
   persian: سامانه پیشنهاددهنده ترکیبی
 - english: Latent Factor
@@ -439,9 +453,9 @@
 - english: Accuracy
   persian: دقت
 - english: Precision
-  persian: دقت
+  persian: نرخ صحت؛ نرخ درستی
 - english: Recall
-  persian: بازخوانی
+  persian: نرخ بازیابی؛ نرخ یادآوری
 - english: F1 Score
   persian: امتیاز F1
 - english: True Positive
@@ -468,6 +482,10 @@
   persian: نسبت مثبت غلط
 - english: False Negative Ratio
   persian: نسبت منفی غلط
+- english: Sensitivity
+  persian: حساسیت
+- english: Specificity
+  persian: اختصاصیت
 - english: Confusion Matrix
   persian: ماتریس درهم‌ریختگی
 - english: Production-ready Model
@@ -475,7 +493,7 @@
 - english: Production Model
   persian: مدل تولید
 - english: Reliable Model
-  persian: مدل قابل اعتماد
+  persian: مدل قابل اعتماد؛ مدل اعتماد‌پذیر
 - english: Reliability
   persian: اعتماد‌پذیری
 - english: Scalability
@@ -491,29 +509,29 @@
 - english: Reproducible
   persian: بازتولیدپذیر
 - english: Adaptability
-  persian: قابلیت سازگاری (سازگاری‌پذیری)
+  persian: سازگاری‌پذیری
 - english: Adaptable
-  persian: سازگار (سازگاری‌پذیر)
+  persian: سازگار؛ سازگاری‌پذیر
 - english: Interpretable
-  persian: قابل تفسیر
+  persian: تفسیرپذیر
 - english: Interpretability
   persian: تفسیرپذیری
 - english: Explainable
-  persian: قابل توضیح
+  persian: توضیح‌پذیر
 - english: Explainability
   persian: توضیح‌پذیری
 - english: Explainable AI
-  persian: هوش مصنوعی قابل توضیح
+  persian: هوش مصنوعی توضیح‌پذیر
 - english: Explainable Artificial Intelligence
-  persian: هوش مصنوعی قابل توضیح
+  persian: هوش مصنوعی توضیح‌پذیر
 - english: Explainable Machine Learning
-  persian: یادگیری ماشین قابل توضیح
+  persian: یادگیری ماشین توضیح‌پذیر
 - english: Objective Function
   persian: تابع هدف
 - english: Data Format
   persian: قالب داده
 - english: Data Type
-  persian: نوع داده (داده‌گونه)
+  persian: نوع داده؛ داده‌گونه
 - english: Row-major Order
   persian: ترتیب سطری
 - english: Column-major Order
@@ -527,9 +545,9 @@
 - english: Column-major Storage
   persian: ذخیره‌سازی ستونی
 - english: Row-major Representation
-  persian: نمایش سطری
+  persian: بازنمایی سطری
 - english: Column-major Representation
-  persian: نمایش ستونی
+  persian: بازنمایی ستونی
 - english: Row-major Matrix
   persian: ماتریس سطری
 - english: Column-major Matrix
@@ -673,19 +691,19 @@
 - english: Boolean Data Type
   persian: نوع داده بولی
 - english: Embedding
-  persian: تعبیه
+  persian: جاسازی؛ تعبیه
 - english: Embedding Layer
-  persian: لایه تعبیه
+  persian: لایه جاسازی؛ لایه تعبیه
 - english: Embedding Matrix
-  persian: ماتریس تعبیه
+  persian: ماتریس جاسازی؛ ماتریس تعبیه
 - english: Embedding Vector
-  persian: بردار تعبیه
+  persian: بردار جاسازی؛ بردار تعبیه
 - english: Embedding Dimension
-  persian: بعد تعبیه
+  persian: بعد جاسازی؛ بعد تعبیه
 - english: Embedding Size
-  persian: اندازه تعبیه
+  persian: اندازه جاسازی؛ اندازه تعبیه
 - english: Embedding Space
-  persian: فضای تعبیه
+  persian: فضای جاسازی؛ فضای تعبیه
 - english: Model Training
   persian: آموزش مدل
 - english: Model Evaluation
@@ -713,13 +731,13 @@
 - english: Online Inference
   persian: استنتاج برخط
 - english: Knowledge Distillation
-  persian: تصفیه دانش (تقطیر دانش)
+  persian: تقطیر دانش
 - english: Knowledge Extraction
   persian: استخراج دانش
 - english: Model Compression
   persian: فشرده‌سازی مدل
 - english: Model Pruning
-  persian:  هرس مدل
+  persian: هرس مدل
 - english: Model Quantization
   persian: کوانتیزاسیون مدل
 - english: Edge Computing
@@ -731,13 +749,13 @@
 - english: Edge Server
   persian: سرور لبه
 - english: K-Nearest Neighbors
-  persian: K-نزدیک‌ترین همسایه‌ها
+  persian: چند نزدیک‌ترین همسایه
 - english: Binary Classification
   persian: طبقه‌بندی دودویی
 - english: Binary Classifier
   persian: طبقه‌بند دودویی
 - english: Bagging
-  persian: کیسه‌بندی (بگینگ) (جمع‌آوری نمونه)
+  persian: کیسه‌بندی؛ کیسه‌گذاری؛ کیسه‌سازی
 - english: Bootstrap Aggregation
   persian: جمع‌آوری بوت‌استرپ
 - english: Bootstrap
@@ -745,11 +763,11 @@
 - english: Bootstrap Sample
   persian: نمونه بوت‌استرپ
 - english: Boosting
-  persian:  بوستینگ (وزن‌افزایی) (افزایش وزن)
+  persian: تقویت‌کننده؛ وزن‌افزا
 - english: Boosting Algorithm
-  persian: الگوریتم بوستینگ (الگوریتم تقویت‌کننده) (الگوریتم وزن‌افزایی)
+  persian: الگوریتم تقویت‌کننده؛ الگوریتم وزن‌افزا
 - english: Boosting Classifier
-  persian: طبقه‌بند بوستینگ (طبقه‌بند تقویت‌کننده) (طبقه‌بند وزن‌افزا)
+  persian: طبقه‌بند تقویت‌کننده؛ طبقه‌بند وزن‌افزا
 - english: Image Classification
   persian: طبقه‌بندی تصویر
 - english: Image Processing
@@ -811,7 +829,7 @@
 - english: Object Localization
   persian: محل‌یابی اشیا
 - english: Transformer
-  persian: تبدیل‌گر
+  persian: تبدیل‌گر؛ مبدل
 - english: Transformer Model
   persian: مدل تبدیل‌گر
 - english: Transformer Architecture
@@ -841,7 +859,7 @@
 - english: One-Hot Vector
   persian: بردار تک-یک
 - english: One-Hot Representation
-  persian:  بازنمایی تک-یک
+  persian: بازنمایی تک-یک
 - english: One-Hot Embedding
   persian: جاسازی تک-یک
 - english: One-Hot Vector Embedding
@@ -889,7 +907,7 @@
 - english: Canary Testing
   persian: آزمایش قناری
 - english: Canary Rollout
-  persian: پخش قناری
+  persian: رونمایی قناری
 - english: Data Center
   persian: مرکز داده
 - english: Data Center Migration
@@ -903,17 +921,17 @@
 - english: Model Store
   persian: انبار مدل
 - english: End-to-End Machine Learning
-  persian: یادگیری ماشین ابتدا به انتها
+  persian: یادگیری ماشین انتها به انتها
 - english: Responsible AI
   persian: هوش مصنوعی مسؤولانه
 - english: Human-in-the-Loop
-  persian: انسان در حلقه
+  persian: انسان-در-حلقه
 - english: Human-in-the-Loop Machine Learning
-  persian: یادگیری ماشین انسان در حلقه
+  persian: یادگیری ماشین انسان-در-حلقه
 - english: Human-in-the-Loop AI
-  persian: هوش مصنوعی انسان در حلقه
+  persian: هوش مصنوعی انسان-در-حلقه
 - english: Human-in-the-Loop ML
-  persian: یادگیری ماشین انسان در حلقه
+  persian: یادگیری ماشین انسان-در-حلقه
 - english: Human-Centered AI
   persian: هوش مصنوعی انسان‌محور
 - english: Artificial General Intelligence
@@ -929,7 +947,7 @@
 - english: Random Cut Forest
   persian: جنگل برش تصادفی
 - english: Regularization
-  persian: تنظیم‌گری (تنظیم)
+  persian: تنظیم‌گری؛ تنطیم
 - english: Decision Tree
   persian: درخت تصمیم
 - english: Support Vector Machine
@@ -941,11 +959,11 @@
 - english: Markov Desicion Process
   persian: فرایند تصمیم مارکوف
 - english: Q-Learning
-  persian: یادگیری Q
+  persian: یادگیری کیو
 - english: Q-Learning Algorithm
-  persian: الگوریتم یادگیری Q
+  persian: الگوریتم یادگیری کیو
 - english: Q-Learning Agent
-  persian: عامل یادگیری Q
+  persian: عامل یادگیری کیو
 - english: Reinforcement Learning with Human Feedback
   persian: یادگیری تقویتی با بازخورد انسانی
 - english: Receiver Operating Characteristic
@@ -953,11 +971,11 @@
 - english: Receiver Operating Characteristic Curve
   persian: منحنی مشخصه کارکرد گیرنده
 - english: ROC Curve
-  persian: منحنی ROC
+  persian: منحنی راک؛ منحنی مشخصه کارکرد گیرنده
 - english: Area Under the Curve
   persian: مساحت زیر منحنی
 - english: Area Under the ROC Curve
-  persian: مساحت زیر منحنی ROC
+  persian: مساحت زیر منحنی راک
 - english: Area Under the Receiver Operating Characteristic Curve
   persian: مساحت زیر منحنی مشخصه کارکرد گیرنده
 - english: Mini-Batch
