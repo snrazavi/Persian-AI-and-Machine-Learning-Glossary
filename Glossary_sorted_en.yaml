@@ -312,10 +312,18 @@
   persian: آمار توصیفی
 - english: Dimensionality Reduction
   persian: کاهش بعد
+- english: Discount Factor
+  persian: ضریب تخفیف
 - english: Discrete Feature
   persian: ویژگی گسسته
 - english: Discrete Variable
   persian: متغیر گسسته
+- english: Discriminant
+  persian: تمایز
+- english: Discriminant Analysis
+  persian: تحلیل تمایز
+- english: Discriminant Function
+  persian: تابع تمایز
 - english: Distributed Training
   persian: آموزش توزیع‌شده
 - english: Distribution

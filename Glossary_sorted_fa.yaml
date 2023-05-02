@@ -178,6 +178,8 @@
   persian: بیش‌نمونه‌برداری متناسب
 - english: Computer Vision
   persian: بینایی ماشین
+- english: Discriminant Function
+  persian: تابع تمایز
 - english: Penalty Function
   persian: تابع جریمه
 - english: Likelihood Function
@@ -216,6 +218,8 @@
   persian: تجزیه مقادیر تکین
 - english: Sentiment Analysis
   persian: تحلیل احساسات
+- english: Discriminant Analysis
+  persian: تحلیل تمایز
 - english: Data Analysis
   persian: تحلیل داده
 - english: Exploratory Data Analysis
@@ -338,6 +342,8 @@
   persian: تقویت گرادیان
 - english: Boosting
   persian: تقویت‌کننده؛ وزن‌افزا
+- english: Discriminant
+  persian: تمایز
 - english: Tensor
   persian: تنسور
 - english: TensorFlow
@@ -614,6 +620,8 @@
   persian: شکاف تعمیم
 - english: Audio-to-Text
   persian: صدا به متن
+- english: Discount Factor
+  persian: ضریب تخفیف
 - english: Pearson Correlation Coefficient
   persian: ضریب همبستگی پیرسون
 - english: Correlation Coefficient
