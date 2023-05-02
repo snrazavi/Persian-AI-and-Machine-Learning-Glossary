@@ -208,6 +208,12 @@
   persian: چارچوب داده
 - english: Data Governance
   persian: حاکمیت داده
+- english: Data Ingestion
+  persian: دریافت داده؛ هضم داده
+- english: Data Ingestion Pipeline
+  persian: خط لوله دریافت داده؛ خط لوله هضم داده
+- english: Data Ingestion Process
+  persian: فرآیند دریافت داده؛ فرآیند هضم داده
 - english: Data Label Concept Drift
   persian: تغییر مفهوم برچسب داده
 - english: Data Label Covariate Shift
@@ -314,6 +320,8 @@
   persian: کاهش بعد
 - english: Discount Factor
   persian: ضریب تخفیف
+- english: Discounted Reward
+  persian: پاداش تخفیف‌خورده؛ پاداش کاهش‌یافته
 - english: Discrete Feature
   persian: ویژگی گسسته
 - english: Discrete Variable

@@ -426,6 +426,8 @@
   persian: حساسیت
 - english: Data Pipeline
   persian: خط لوله داده
+- english: Data Ingestion Pipeline
+  persian: خط لوله دریافت داده؛ خط لوله هضم داده
 - english: Data Stream Processing Pipeline
   persian: خط لوله پردازش جریان داده
 - english: Generalization Error
@@ -492,6 +494,8 @@
   persian: درست‌نمایی
 - english: Feature Hashing
   persian: درهم‌سازی ویژگی
+- english: Data Ingestion
+  persian: دریافت داده؛ هضم داده
 - english: Data Lake
   persian: دریاچه داده
 - english: Batch
@@ -654,6 +658,8 @@
   persian: فاصله اقلیدسی
 - english: Manhattan Distance
   persian: فاصله منهتن
+- english: Data Ingestion Process
+  persian: فرآیند دریافت داده؛ فرآیند هضم داده
 - english: Hyperparameter
   persian: فراروند
 - english: Markov Desicion Process
@@ -954,6 +960,8 @@
   persian: پاداش
 - english: Cumulative Reward
   persian: پاداش تجمعی
+- english: Discounted Reward
+  persian: پاداش تخفیف‌خورده؛ پاداش کاهش‌یافته
 - english: Reward-Penalty
   persian: پاداش-جریمه
 - english: Data Cleaning

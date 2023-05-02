@@ -1096,3 +1096,11 @@
   persian: تمایز
 - english: Discount Factor
   persian: ضریب تخفیف
+- english: Discounted Reward
+  persian: پاداش تخفیف‌خورده؛ پاداش کاهش‌یافته
+- english: Data Ingestion
+  persian: دریافت داده؛ هضم داده
+- english: Data Ingestion Pipeline
+  persian: خط لوله دریافت داده؛ خط لوله هضم داده
+- english: Data Ingestion Process
+  persian: فرآیند دریافت داده؛ فرآیند هضم داده
