@@ -305,7 +305,13 @@
 - english: Distribution Drift
   persian: تغییر توزیع
 - english: Dropout
-  persian: رها‌سازی
+  persian: دورریزی
+- english: Dropout Layer
+  persian: لایه دورریزی
+- english: Dropout Rate
+  persian: نرخ دورریزی
+- english: Dropout Regularization
+  persian: تنظیم با دورریزی
 - english: Early Stopping
   persian: متوقف‌سازی زودهنگام
 - english: Edge Computing
@@ -402,6 +408,8 @@
   persian: شبکه عصبی پیش‌خوران
 - english: Forward Propagation
   persian: پیش‌انتشار
+- english: Gated Recurrent Unit
+  persian: واحد بازگشتی دروازه‌ای
 - english: Generative Adversarial Network
   persian: شبکه مولد خصمانه
 - english: Generative Pre-Trained Transformer
@@ -415,11 +423,11 @@
 - english: Gradient Clipping
   persian: برش گرادیان
 - english: Gradient Descent
-  persian: گرادیان کاهشی
+  persian: کاهش گرادیان
 - english: Gradient explosion
   persian: انفجار گرادیان
 - english: Gradient vanishing
-  persian: محو شدن گرادیان
+  persian: محو گرادیان
 - english: Graphical Models
   persian: مدل‌های گرافی
 - english: Grid Search
@@ -576,8 +584,10 @@
   persian: خطای میانگین مقیاس‌دار
 - english: Mean Squared Error
   persian: خطای میانگین مربعات
+- english: Mini-Batch
+  persian: ریز-دسته
 - english: Mini-Batch Gradient Descent
-  persian: گرادیان کاهشی دسته‌ای
+  persian: کاهش گرادیان ریز-دسته‌ای
 - english: Missing Data
   persian: داده گم‌شده
 - english: Missing Value
@@ -831,7 +841,7 @@
 - english: Stationarity
   persian: ایستایی
 - english: Stochastic Gradient Descent
-  persian: گرادیان کاهشی تصادفی
+  persian: کاهش گرادیان تصادفی
 - english: Stratified Oversampling
   persian: بیش‌نمونه‌برداری متناسب
 - english: Stratified Sampling

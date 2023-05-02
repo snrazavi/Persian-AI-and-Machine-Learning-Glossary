@@ -153,11 +153,11 @@
 - english: Bayesian Optimization
   persian: بهینه‌سازی بیزی
 - english: Gradient Descent
-  persian: گرادیان کاهشی
+  persian: کاهش گرادیان
 - english: Stochastic Gradient Descent
-  persian: گرادیان کاهشی تصادفی
+  persian: کاهش گرادیان تصادفی
 - english: Mini-Batch Gradient Descent
-  persian: گرادیان کاهشی دسته‌ای
+  persian: کاهش گرادیان ریز-دسته‌ای
 - english: Learning Rate
   persian: نرخ یادگیری
 - english: Learning Rate Decay
@@ -201,7 +201,7 @@
 - english: Gradient explosion
   persian: انفجار گرادیان
 - english: Gradient vanishing
-  persian: محو شدن گرادیان
+  persian: محو گرادیان
 - english: Gradient Boosting
   persian: تقویت گرادیان 
 - english: Early Stopping
@@ -209,7 +209,13 @@
 - english: Batch Normalization
   persian: نرمال‌سازی دسته‌ای
 - english: Dropout
-  persian: رها‌سازی
+  persian: دورریزی
+- english: Dropout Rate
+  persian: نرخ دورریزی
+- english: Dropout Layer
+  persian: لایه دورریزی
+- english: Dropout Regularization
+  persian: تنظیم با دورریزی
 - english: Backpropagation Through Time
   persian: پس‌انتشار در طول زمان
 - english: Activation Function
@@ -952,3 +958,7 @@
   persian: مساحت زیر منحنی ROC
 - english: Area Under the Receiver Operating Characteristic Curve
   persian: مساحت زیر منحنی مشخصه کارکرد گیرنده
+- english: Mini-Batch
+  persian: ریز-دسته
+- english: Gated Recurrent Unit
+  persian: واحد بازگشتی دروازه‌ای

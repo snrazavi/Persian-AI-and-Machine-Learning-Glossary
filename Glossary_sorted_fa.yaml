@@ -308,6 +308,8 @@
   persian: تقسیم‌بندی تصویر
 - english: Gradient Boosting
   persian: تقویت گرادیان
+- english: Dropout Regularization
+  persian: تنظیم با دورریزی
 - english: Hyperparameter Tuning
   persian: تنظیم فراروند
 - english: Model Tuning
@@ -438,6 +440,8 @@
   persian: دنباله به دنباله
 - english: Feature Binarization
   persian: دودویی‌سازی ویژگی
+- english: Dropout
+  persian: دورریزی
 - english: Epoch
   persian: دوره
 - english: Column-major Storage
@@ -458,12 +462,12 @@
   persian: رمزگذاری ویژگی
 - english: Transformer Decoder
   persian: رمزگشای تبدیل‌گر
-- english: Dropout
-  persian: رها‌سازی
 - english: Model Prediction Method
   persian: روش پیش‌بینی مدل
 - english: Regression
   persian: رگرسیون
+- english: Mini-Batch
+  persian: ریز-دسته
 - english: Markov Chain
   persian: زنجیره مارکوف
 - english: Attention Mechanism
@@ -586,6 +590,8 @@
   persian: لایه تعبیه
 - english: Attention Layer
   persian: لایه توجه
+- english: Dropout Layer
+  persian: لایه دورریزی
 - english: Embedding Matrix
   persian: ماتریس تعبیه
 - english: Confusion Matrix
@@ -647,7 +653,7 @@
 - english: Object Localization
   persian: محل‌یابی اشیا
 - english: Gradient vanishing
-  persian: محو شدن گرادیان
+  persian: محو گرادیان
 - english: Production-ready Model
   persian: مدل آماده برای تولید
 - english: Transformer Model
@@ -714,6 +720,8 @@
   persian: مهندسی ویژگی
 - english: Data Stream Processing Engine
   persian: موتور پردازش جریان داده
+- english: Dropout Rate
+  persian: نرخ دورریزی
 - english: False Positive Rate
   persian: نرخ مثبت غلط
 - english: True Positive Rate
@@ -812,6 +820,8 @@
   persian: هوش مصنوعی قابل توضیح
 - english: Responsible AI
   persian: هوش مصنوعی مسؤولانه
+- english: Gated Recurrent Unit
+  persian: واحد بازگشتی دروازه‌ای
 - english: Rectified Linear Unit
   persian: واحد خطی تصحیح‌شده
 - english: Variance
@@ -888,6 +898,12 @@
   persian: کاهش بعد
 - english: Learning Rate Decay
   persian: کاهش نرخ یادگیری
+- english: Gradient Descent
+  persian: کاهش گرادیان
+- english: Stochastic Gradient Descent
+  persian: کاهش گرادیان تصادفی
+- english: Mini-Batch Gradient Descent
+  persian: کاهش گرادیان ریز-دسته‌ای
 - english: Data Exploration
   persian: کاوش داده
 - english: Data Stream Processing Library
@@ -906,12 +922,6 @@
   persian: کیسه‌بندی (بگینگ) (جمع‌آوری نمونه)
 - english: Gradient
   persian: گرادیان
-- english: Gradient Descent
-  persian: گرادیان کاهشی
-- english: Stochastic Gradient Descent
-  persian: گرادیان کاهشی تصادفی
-- english: Mini-Batch Gradient Descent
-  persian: گرادیان کاهشی دسته‌ای
 - english: Edge Node
   persian: گره لبه
 - english: Feature Binning
