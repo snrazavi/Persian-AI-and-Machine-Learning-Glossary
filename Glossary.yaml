@@ -65,7 +65,7 @@
 - english: Adjacency Matrix
   persian: ماتریس همسایگی
 - english: Data Analysis
-  persian: تحلیل داده 
+  persian: تحلیل داده
 - english: Data Visualization
   persian: تصویرسازی داده
 - english: Data Exploration
@@ -101,7 +101,7 @@
 - english: Unsupervised Learning
   persian: یادگیری بدون نظارت
 - english: Semi-Supervised Learning
-  persian: یادگیری نیمه‌نظارت‌شده 
+  persian: یادگیری نیمه‌نظارت‌شده
 - english: Reinforcement Learning
   persian: یادگیری تقویتی
 - english: Classification
@@ -219,7 +219,7 @@
 - english: Gradient vanishing
   persian: محو گرادیان
 - english: Gradient Boosting
-  persian: تقویت گرادیان 
+  persian: تقویت گرادیان
 - english: Early Stopping
   persian: متوقف‌سازی زودهنگام
 - english: Batch Normalization
@@ -330,10 +330,8 @@
   persian: انحراف میانگین درصدی مطلق
 - english: Mean Percentage Scaled Error
   persian: خطای میانگین درصدی مقیاس‌دار
-- english: Mean Percentage Deviation
-  persian: انحراف میانگین درصدی
 - english: Data Drift
-  persian: تغییر داده 
+  persian: تغییر داده
 - english: Data Shift
   persian: تغییر داده
 - english: Data Stationarity
@@ -526,8 +524,6 @@
   persian: هوش مصنوعی توضیح‌پذیر
 - english: Explainable Machine Learning
   persian: یادگیری ماشین توضیح‌پذیر
-- english: Objective Function
-  persian: تابع هدف
 - english: Data Format
   persian: قالب داده
 - english: Data Type
@@ -808,7 +804,7 @@
   persian: تصویر به متن
 - english: Text-to-Video
   persian: متن به ویدیو
-- english: Video-to-Text 
+- english: Video-to-Text
   persian: ویدیو به متن
 - english: Text-to-Audio
   persian: متن به صدا
@@ -1088,4 +1084,3 @@
   persian: تابع سیاست بهینه
 - english: Optimal Policy Maximization
   persian: بیشینه‌سازی سیاست بهینه
-

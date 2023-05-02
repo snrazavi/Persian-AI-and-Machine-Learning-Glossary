@@ -13,6 +13,7 @@ class Glossary:
         """
         self.glossary_file = glossary_file
         self.glossary = self.read_glossary()
+        self._deduplicate_glossary()
 
     def __len__(self) -> int:
         """
@@ -31,6 +32,24 @@ class Glossary:
         :return: sorted list of dictionaries
         """
         return sorted(dicts, key=lambda x: x[key], reverse=reverse)
+
+    def _deduplicate_glossary(self) -> None:
+        """
+        Remove duplicate terms from the glossary
+        :return: None
+        """
+        duplicate_found = False
+        deduplicated_glossary = []
+        for term in self.glossary:
+            if term not in deduplicated_glossary:
+                deduplicated_glossary.append(term)
+            else:
+                print(f"Duplicate term: {term['english']}")
+                duplicate_found = True
+        self.glossary = deduplicated_glossary
+        if duplicate_found:
+            print("Duplicate terms found in the glossary. Rewriting the glossary file...")
+            self.write_glossary(self.glossary, self.glossary_file)
 
     def read_glossary(self) -> list[dict]:
         """

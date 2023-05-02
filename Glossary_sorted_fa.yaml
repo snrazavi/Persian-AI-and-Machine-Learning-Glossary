@@ -90,8 +90,6 @@
   persian: انحراف میانگین
 - english: Mean Percentage Deviation
   persian: انحراف میانگین درصدی
-- english: Mean Percentage Deviation
-  persian: انحراف میانگین درصدی
 - english: Mean Percentage Absolute Deviation
   persian: انحراف میانگین درصدی مطلق
 - english: Kullback–Leibler divergence
@@ -190,8 +188,6 @@
   persian: تابع سیاست بهینه
 - english: Activation Function
   persian: تابع فعال‌سازی
-- english: Objective Function
-  persian: تابع هدف
 - english: Objective Function
   persian: تابع هدف
 - english: Cost Function

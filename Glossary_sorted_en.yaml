@@ -638,8 +638,6 @@
   persian: خطای میانگین درصدی مطلق
 - english: Mean Percentage Deviation
   persian: انحراف میانگین درصدی
-- english: Mean Percentage Deviation
-  persian: انحراف میانگین درصدی
 - english: Mean Percentage Error
   persian: خطای میانگین درصدی
 - english: Mean Percentage Scaled Error
@@ -756,8 +754,6 @@
   persian: محل‌یابی اشیا
 - english: Object Recognition
   persian: بازشناسی اشیا
-- english: Objective Function
-  persian: تابع هدف
 - english: Objective Function
   persian: تابع هدف
 - english: Observability
