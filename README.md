@@ -41,4 +41,3 @@ If you have any questions, feedback, or suggestions, please feel free to open an
 ## License
 
 This project is licensed under the MIT License. You are free to share and adapt the material for any purpose, even commercially, as long as you give appropriate credit, provide a link to the license, and indicate if changes were made. See the [LICENSE](LICENSE) file for more information.
-

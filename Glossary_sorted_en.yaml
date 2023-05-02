@@ -54,6 +54,8 @@
   persian: بهینه‌سازی بیزی
 - english: Bias
   persian: سوگیری
+- english: Bias-Variance Trade-off
+  persian: موازنه سوگیری-واریانس
 - english: Biased
   persian: سوگیر؛ سودار؛ سوگیرانه
 - english: Bidirectional Recurrent Neural Network
@@ -414,18 +416,42 @@
   persian: بردار ویژگی
 - english: Feedforward Neural Network
   persian: شبکه عصبی پیش‌خوران
+- english: Fine-Tune
+  persian: تنظیم‌ دقیق
+- english: Fine-Tuning
+  persian: تنظیم‌گری دقیق
 - english: Forward Propagation
   persian: پیش‌انتشار
 - english: GPU
   persian: جی‌پی‌یو
+- english: GPU-Accelerated
+  persian: شتاب‌یافته با جی‌پی‌یو
+- english: GPU-Accelerated AI
+  persian: هوش مصنوعی شتاب‌یافته با جی‌پی‌یو
+- english: GPU-Accelerated Computing
+  persian: رایانش شتاب‌یافته با جی‌پی‌یو
+- english: GPU-Accelerated Deep Learning
+  persian: یادگیری عمیق شتاب‌یافته با جی‌پی‌یو
+- english: GPU-Accelerated Machine Learning
+  persian: یادگیری ماشین شتاب‌یافته با جی‌پی‌یو
 - english: Gated Recurrent Unit
   persian: واحد بازگشتی دروازه‌ای
+- english: Generalization
+  persian: تعمیم؛ عمومی‌سازی
+- english: Generalization Error
+  persian: خطای تعمیم
+- english: Generalization Gap
+  persian: شکاف تعمیم
 - english: Generative Adversarial Network
   persian: شبکه مولد خصمانه؛ شبکه مولد رقابتی
 - english: Generative Pre-Trained Transformer
   persian: تبدیل‌گر پیش‌آموزش‌دیده مولد
 - english: Gradient
   persian: گرادیان
+- english: Gradient Boosted Decision Tree
+  persian: درخت تصمیم تقویت‌شده با گرادیان
+- english: Gradient Boosted Tree
+  persian: درخت تقویت‌شده با گرادیان
 - english: Gradient Boosting
   persian: تقویت گرادیان
 - english: Gradient Checking

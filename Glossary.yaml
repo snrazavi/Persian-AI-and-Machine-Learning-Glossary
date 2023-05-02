@@ -1006,3 +1006,29 @@
   persian: کودا
 - english: CUDA Toolkit
   persian: مجموعه‌ابزار کودا
+- english: GPU-Accelerated Computing
+  persian: رایانش شتاب‌یافته با جی‌پی‌یو
+- english: GPU-Accelerated
+  persian: شتاب‌یافته با جی‌پی‌یو
+- english: GPU-Accelerated Deep Learning
+  persian: یادگیری عمیق شتاب‌یافته با جی‌پی‌یو
+- english: GPU-Accelerated Machine Learning
+  persian: یادگیری ماشین شتاب‌یافته با جی‌پی‌یو
+- english: GPU-Accelerated AI
+  persian: هوش مصنوعی شتاب‌یافته با جی‌پی‌یو
+- english: Bias-Variance Trade-off
+  persian: موازنه سوگیری-واریانس
+- english: Gradient Boosted Decision Tree
+  persian: درخت تصمیم تقویت‌شده با گرادیان
+- english: Gradient Boosted Tree
+  persian: درخت تقویت‌شده با گرادیان
+- english: Fine-Tuning
+  persian: تنظیم‌گری دقیق
+- english: Fine-Tune
+  persian: تنظیم‌ دقیق
+- english: Generalization
+  persian: تعمیم؛ عمومی‌سازی
+- english: Generalization Error
+  persian: خطای تعمیم
+- english: Generalization Gap
+  persian: شکاف تعمیم

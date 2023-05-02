@@ -228,6 +228,8 @@
   persian: تصویر به متن
 - english: Data Visualization
   persian: تصویرسازی داده
+- english: Generalization
+  persian: تعمیم؛ عمومی‌سازی
 - english: Data Label Unlabeled Drift
   persian: تغییر بدون برچسب برچسب داده
 - english: Data Unlabeled Drift
@@ -320,6 +322,10 @@
   persian: تنظیم فراروند
 - english: Model Tuning
   persian: تنظیم مدل
+- english: Fine-Tune
+  persian: تنظیم‌ دقیق
+- english: Fine-Tuning
+  persian: تنظیم‌گری دقیق
 - english: Regularization
   persian: تنظیم‌گری؛ تنطیم
 - english: Transformer Attention
@@ -388,6 +394,8 @@
   persian: خط لوله داده
 - english: Data Stream Processing Pipeline
   persian: خط لوله پردازش جریان داده
+- english: Generalization Error
+  persian: خطای تعمیم
 - english: Root Mean Squared Error
   persian: خطای ریشه میانگین مربعات
 - english: Mean Bias Error
@@ -442,6 +450,10 @@
   persian: داده‌کاوی
 - english: Decision Tree
   persian: درخت تصمیم
+- english: Gradient Boosted Decision Tree
+  persian: درخت تصمیم تقویت‌شده با گرادیان
+- english: Gradient Boosted Tree
+  persian: درخت تقویت‌شده با گرادیان
 - english: Feature Hashing
   persian: درهم‌سازی ویژگی
 - english: Data Lake
@@ -468,6 +480,8 @@
   persian: رابط برنامه‌نویسی برای پیش‌بینی مدل
 - english: Cold Start
   persian: راه‌اندازی سرد
+- english: GPU-Accelerated Computing
+  persian: رایانش شتاب‌یافته با جی‌پی‌یو
 - english: Transformer Encoder
   persian: رمزگذار تبدیل‌گر
 - english: One-Hot Encoding
@@ -556,6 +570,10 @@
   persian: شتاب نستروف
 - english: Momentum
   persian: شتاب؛ ممنتوم
+- english: GPU-Accelerated
+  persian: شتاب‌یافته با جی‌پی‌یو
+- english: Generalization Gap
+  persian: شکاف تعمیم
 - english: Audio-to-Text
   persian: صدا به متن
 - english: Pearson Correlation Coefficient
@@ -746,6 +764,8 @@
   persian: مهندس داده
 - english: Feature Engineering
   persian: مهندسی ویژگی
+- english: Bias-Variance Trade-off
+  persian: موازنه سوگیری-واریانس
 - english: Data Stream Processing Engine
   persian: موتور پردازش جریان داده
 - english: Recall
@@ -846,6 +866,8 @@
   persian: هوش مصنوعی توضیح‌پذیر
 - english: Explainable Artificial Intelligence
   persian: هوش مصنوعی توضیح‌پذیر
+- english: GPU-Accelerated AI
+  persian: هوش مصنوعی شتاب‌یافته با جی‌پی‌یو
 - english: Responsible AI
   persian: هوش مصنوعی مسؤولانه
 - english: Gated Recurrent Unit
@@ -986,6 +1008,8 @@
   persian: یادگیری تقویتی با بازخورد انسانی
 - english: Ensemble Learning
   persian: یادگیری شورایی
+- english: GPU-Accelerated Deep Learning
+  persian: یادگیری عمیق شتاب‌یافته با جی‌پی‌یو
 - english: Deep Learning
   persian: یادگیری عمیق؛ یادگیری ژرف
 - english: Machine Learning
@@ -998,6 +1022,8 @@
   persian: یادگیری ماشین انسان-در-حلقه
 - english: Explainable Machine Learning
   persian: یادگیری ماشین توضیح‌پذیر
+- english: GPU-Accelerated Machine Learning
+  persian: یادگیری ماشین شتاب‌یافته با جی‌پی‌یو
 - english: Continual Learning
   persian: یادگیری مداوم
 - english: Supervised Learning
