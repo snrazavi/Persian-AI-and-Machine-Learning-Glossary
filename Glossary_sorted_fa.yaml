@@ -66,6 +66,8 @@
   persian: امتیاز F1
 - english: Model Scoring
   persian: امتیازدهی مدل
+- english: MXNet
+  persian: ام‌ایکس‌نت
 - english: Data Warehouse
   persian: انبار داده
 - english: Model Store
@@ -308,6 +310,10 @@
   persian: تقویت گرادیان
 - english: Boosting
   persian: تقویت‌کننده؛ وزن‌افزا
+- english: Tensor
+  persian: تنسور
+- english: TensorFlow
+  persian: تنسورفلو
 - english: Dropout Regularization
   persian: تنظیم با دورریزی
 - english: Hyperparameter Tuning
@@ -336,6 +342,8 @@
   persian: تکمیل مقدار گم‌شده
 - english: Feature Imputation
   persian: تکمیل ویژگی
+- english: TPU
+  persian: تی‌پی‌یو؛ واحد پردازش تنسور
 - english: One-Hot Vector Embedding
   persian: جاسازی بردار تک-یک
 - english: Word2Vec Vector Embedding
@@ -368,6 +376,8 @@
   persian: جنگل برش تصادفی
 - english: Random Forest
   persian: جنگل تصادفی
+- english: GPU
+  persian: جی‌پی‌یو
 - english: Long Short-Term Memory
   persian: حافظه بلند کوتاه‌مدت
 - english: Data Governance
@@ -656,6 +666,8 @@
   persian: مجموعه آزمون
 - english: Training Set
   persian: مجموعه آموزشی
+- english: CUDA Toolkit
+  persian: مجموعه ابزار کودا
 - english: Validation Set
   persian: مجموعه اعتبارسنجی
 - english: Purturbed Dataset
@@ -840,6 +852,10 @@
   persian: واحد بازگشتی دروازه‌ای
 - english: Rectified Linear Unit
   persian: واحد خطی تصحیح‌شده
+- english: Tensor Processing Unit
+  persian: واحد پردازش تنسور
+- english: Graphics Processing Unit
+  persian: واحد پردازش گرافیکی
 - english: Variance
   persian: واریانس
 - english: Data Stream Processing Task
@@ -868,6 +884,8 @@
   persian: پایش عملکرد مدل
 - english: Model Monitoring
   persian: پایش مدل
+- english: PyTorch
+  persian: پای‌تورچ
 - english: Image Processing
   persian: پردازش تصویر
 - english: Data Stream Processing
@@ -910,6 +928,8 @@
   persian: کار پردازش جریان داده
 - english: Workflow
   persian: کارروند
+- english: Caffe
+  persian: کافه
 - english: Dimensionality Reduction
   persian: کاهش بعد
 - english: Learning Rate Decay
@@ -924,6 +944,8 @@
   persian: کاوش داده
 - english: Data Stream Processing Library
   persian: کتابخانه پردازش جریان داده
+- english: Keras
+  persian: کراس
 - english: Word2Vec
   persian: کلمه به بردار
 - english: Underfitting
@@ -934,6 +956,8 @@
   persian: کم‌نمونه‌برداری متناسب
 - english: Model Quantization
   persian: کوانتیزاسیون مدل
+- english: CUDA
+  persian: کودا
 - english: Bagging
   persian: کیسه‌بندی؛ کیسه‌گذاری؛ کیسه‌سازی
 - english: Gradient

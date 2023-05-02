@@ -90,6 +90,12 @@
   persian: جمع‌آوری بوت‌استرپ
 - english: Bootstrap Sample
   persian: نمونه بوت‌استرپ
+- english: CUDA
+  persian: کودا
+- english: CUDA Toolkit
+  persian: مجموعه ابزار کودا
+- english: Caffe
+  persian: کافه
 - english: Canary Deployment
   persian: استقرار قناری
 - english: Canary Release
@@ -410,6 +416,8 @@
   persian: شبکه عصبی پیش‌خوران
 - english: Forward Propagation
   persian: پیش‌انتشار
+- english: GPU
+  persian: جی‌پی‌یو
 - english: Gated Recurrent Unit
   persian: واحد بازگشتی دروازه‌ای
 - english: Generative Adversarial Network
@@ -432,6 +440,8 @@
   persian: محو گرادیان
 - english: Graphical Models
   persian: مدل‌های گرافی
+- english: Graphics Processing Unit
+  persian: واحد پردازش گرافیکی
 - english: Grid Search
   persian: جستجوی شبکه‌ای؛ جستجوی توری
 - english: Human-Centered AI
@@ -488,6 +498,8 @@
   persian: اعتبارسنجی ضربدری چند بخشی
 - english: K-Nearest Neighbors
   persian: چند نزدیک‌ترین همسایه
+- english: Keras
+  persian: کراس
 - english: Knowledge Distillation
   persian: تقطیر دانش
 - english: Knowledge Extraction
@@ -546,6 +558,8 @@
   persian: تقریب ماتریس کم‌رتبه
 - english: Low-Rank Matrix Factorization
   persian: تجزیه ماتریس کم‌رتبه
+- english: MXNet
+  persian: ام‌ایکس‌نت
 - english: Machine Learning
   persian: یادگیری ماشین
 - english: Maintainability
@@ -750,6 +764,8 @@
   persian: مجموعه‌داده اختلال‌دار
 - english: Purturbed Sample
   persian: نمونه اختلال‌دار
+- english: PyTorch
+  persian: پای‌تورچ
 - english: Q-Learning
   persian: یادگیری کیو
 - english: Q-Learning Agent
@@ -878,12 +894,20 @@
   persian: ماشین بردار پشتیبان
 - english: Systematic Sampling
   persian: نمونه‌برداری سامانه‌ای
+- english: TPU
+  persian: تی‌پی‌یو؛ واحد پردازش تنسور
 - english: Tanh
   persian: تانژانت هیپربولیک
 - english: Target Leakage
   persian: نشت هدف
 - english: Temporal Leakage
   persian: نشت زمانی
+- english: Tensor
+  persian: تنسور
+- english: Tensor Processing Unit
+  persian: واحد پردازش تنسور
+- english: TensorFlow
+  persian: تنسورفلو
 - english: Test Sample
   persian: نمونه آزمون
 - english: Test Set

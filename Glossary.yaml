@@ -982,3 +982,27 @@
   persian: ریز-دسته
 - english: Gated Recurrent Unit
   persian: واحد بازگشتی دروازه‌ای
+- english: TensorFlow
+  persian: تنسورفلو
+- english: Tensor
+  persian: تنسور
+- english: Tensor Processing Unit
+  persian: واحد پردازش تنسور
+- english: TPU
+  persian: تی‌پی‌یو؛ واحد پردازش تنسور
+- english: PyTorch
+  persian: پای‌تورچ
+- english: Keras
+  persian: کراس
+- english: MXNet
+  persian: ام‌ایکس‌نت
+- english: Caffe
+  persian: کافه
+- english: GPU
+  persian: جی‌پی‌یو
+- english: Graphics Processing Unit
+  persian: واحد پردازش گرافیکی
+- english: CUDA
+  persian: کودا
+- english: CUDA Toolkit
+  persian: مجموعه ابزار کودا
