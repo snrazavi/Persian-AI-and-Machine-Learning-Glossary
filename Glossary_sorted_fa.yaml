@@ -188,6 +188,8 @@
   persian: تابع سیاست بهینه
 - english: Activation Function
   persian: تابع فعال‌سازی
+- english: Decision Boundary Function
+  persian: تابع مرز تصمیم
 - english: Objective Function
   persian: تابع هدف
 - english: Cost Function
@@ -754,6 +756,8 @@
   persian: مدل‌های گرافی احتمالاتی
 - english: Workflow Management
   persian: مدیریت کارروند
+- english: Decision Boundary
+  persian: مرز تصمیم
 - english: Data Center
   persian: مرکز داده
 - english: Imbalanced Classification Problem

@@ -294,6 +294,10 @@
   persian: جریان داده
 - english: Dataframe
   persian: چارچوب داده
+- english: Decision Boundary
+  persian: مرز تصمیم
+- english: Decision Boundary Function
+  persian: تابع مرز تصمیم
 - english: Decision Tree
   persian: درخت تصمیم
 - english: Deep Learning
