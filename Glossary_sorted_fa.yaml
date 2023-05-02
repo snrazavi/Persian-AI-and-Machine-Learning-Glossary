@@ -146,6 +146,8 @@
   persian: برچسب‌گذاری
 - english: Embedding Dimension
   persian: بعد جاسازی؛ بعد تعبیه
+- english: Optimal
+  persian: بهینه
 - english: Bayesian Optimization
   persian: بهینه‌سازی بیزی
 - english: Hyperparameter Optimization
@@ -156,6 +158,20 @@
   persian: بوت‌استرپ
 - english: Boolean
   persian: بولی
+- english: Maximum
+  persian: بیشینه
+- english: Maximum Likelihood
+  persian: بیشینه درست‌نمایی
+- english: Maximization
+  persian: بیشینه‌سازی
+- english: Likelihood Maximization
+  persian: بیشینه‌سازی درست‌نمایی
+- english: Optimal Policy Maximization
+  persian: بیشینه‌سازی سیاست بهینه
+- english: Reward Maximization
+  persian: بیشینه‌سازی پاداش
+- english: Cumulative Reward Maximization
+  persian: بیشینه‌سازی پاداش تجمعی
 - english: Overfitting
   persian: بیش‌برازش
 - english: Oversampling
@@ -164,8 +180,14 @@
   persian: بیش‌نمونه‌برداری متناسب
 - english: Computer Vision
   persian: بینایی ماشین
+- english: Penalty Function
+  persian: تابع جریمه
+- english: Likelihood Function
+  persian: تابع درست‌نمایی
 - english: Loss Function
   persian: تابع زیان
+- english: Optimal Policy Function
+  persian: تابع سیاست بهینه
 - english: Activation Function
   persian: تابع فعال‌سازی
 - english: Objective Function
@@ -174,6 +196,10 @@
   persian: تابع هدف
 - english: Cost Function
   persian: تابع هزینه
+- english: Reward Function
+  persian: تابع پاداش
+- english: Reward-Penalty Function
+  persian: تابع پاداش-جریمه
 - english: Model Prediction Function
   persian: تابع پیش‌بینی مدل
 - english: Tanh
@@ -208,6 +234,8 @@
   persian: تحلیل‌گر داده
 - english: Latent Dirichlet Allocation
   persian: تخصیص نهان دیریکله
+- english: Maximum Likelihood Estimation
+  persian: تخمین بیشینه درست‌نمایی
 - english: Column-major Order
   persian: ترتیب ستونی
 - english: Row-major Order
@@ -370,6 +398,8 @@
   persian: جریان داده
 - english: Data Stream
   persian: جریان داده
+- english: Penalty
+  persian: جریمه
 - english: Random Search
   persian: جستجوی تصادفی
 - english: Data Snooping
@@ -454,6 +484,8 @@
   persian: درخت تصمیم تقویت‌شده با گرادیان
 - english: Gradient Boosted Tree
   persian: درخت تقویت‌شده با گرادیان
+- english: Likelihood
+  persian: درست‌نمایی
 - english: Feature Hashing
   persian: درهم‌سازی ویژگی
 - english: Data Lake
@@ -492,8 +524,12 @@
   persian: رمزگذاری ویژگی
 - english: Transformer Decoder
   persian: رمزگشای تبدیل‌گر
+- english: Monte Carlo Method
+  persian: روش مونته کارلو
 - english: Model Prediction Method
   persian: روش پیش‌بینی مدل
+- english: Policy Gradient Method
+  persian: روش گرادیان سیاست
 - english: Canary Rollout
   persian: رونمایی قناری
 - english: Regression
@@ -546,6 +582,10 @@
   persian: سوگیری
 - english: Data Stream Processing Platform
   persian: سکوی پردازش جریان داده
+- english: Policy
+  persian: سیاست
+- english: Optimal Policy
+  persian: سیاست بهینه
 - english: Sigmoid
   persian: سیگموئید
 - english: Cosine Similarity
@@ -768,6 +808,8 @@
   persian: موازنه سوگیری-واریانس
 - english: Data Stream Processing Engine
   persian: موتور پردازش جریان داده
+- english: Monte Carlo
+  persian: مونته کارلو
 - english: Recall
   persian: نرخ بازیابی؛ نرخ یادآوری
 - english: Dropout Rate
@@ -900,6 +942,12 @@
   persian: ویژگی پیوسته
 - english: Discrete Feature
   persian: ویژگی گسسته
+- english: Reward
+  persian: پاداش
+- english: Cumulative Reward
+  persian: پاداش تجمعی
+- english: Reward-Penalty
+  persian: پاداش-جریمه
 - english: Data Cleaning
   persian: پاک‌سازی داده
 - english: Model Performance Monitoring
@@ -970,6 +1018,12 @@
   persian: کراس
 - english: Word2Vec
   persian: کلمه به بردار
+- english: Minimum
+  persian: کمینه
+- english: Minimization
+  persian: کمینه‌سازی
+- english: Penalty Minimization
+  persian: کمینه‌سازی جریمه
 - english: Underfitting
   persian: کم‌برازش
 - english: Undersampling
@@ -984,6 +1038,8 @@
   persian: کیسه‌بندی؛ کیسه‌گذاری؛ کیسه‌سازی
 - english: Gradient
   persian: گرادیان
+- english: Policy Gradient
+  persian: گرادیان سیاست
 - english: Edge Node
   persian: گره لبه
 - english: Feature Binning

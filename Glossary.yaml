@@ -1032,3 +1032,60 @@
   persian: خطای تعمیم
 - english: Generalization Gap
   persian: شکاف تعمیم
+- english: Reward
+  persian: پاداش
+- english: Reward Function
+  persian: تابع پاداش
+- english: Reward Maximization
+  persian: بیشینه‌سازی پاداش
+- english: Penalty
+  persian: جریمه
+- english: Penalty Function
+  persian: تابع جریمه
+- english: Penalty Minimization
+  persian: کمینه‌سازی جریمه
+- english: Reward-Penalty
+  persian: پاداش-جریمه
+- english: Reward-Penalty Function
+  persian: تابع پاداش-جریمه
+- english: Policy
+  persian: سیاست
+- english: Cumulative Reward
+  persian: پاداش تجمعی
+- english: Cumulative Reward Maximization
+  persian: بیشینه‌سازی پاداش تجمعی
+- english: Maximization
+  persian: بیشینه‌سازی
+- english: Minimization
+  persian: کمینه‌سازی
+- english: Policy Gradient
+  persian: گرادیان سیاست
+- english: Policy Gradient Method
+  persian: روش گرادیان سیاست
+- english: Monte Carlo
+  persian: مونته کارلو
+- english: Monte Carlo Method
+  persian: روش مونته کارلو
+- english: Maximum Likelihood Estimation
+  persian: تخمین بیشینه درست‌نمایی
+- english: Maximum Likelihood
+  persian: بیشینه درست‌نمایی
+- english: Maximum
+  persian: بیشینه
+- english: Likelihood
+  persian: درست‌نمایی
+- english: Minimum
+  persian: کمینه
+- english: Likelihood Function
+  persian: تابع درست‌نمایی
+- english: Likelihood Maximization
+  persian: بیشینه‌سازی درست‌نمایی
+- english: Optimal
+  persian: بهینه
+- english: Optimal Policy
+  persian: سیاست بهینه
+- english: Optimal Policy Function
+  persian: تابع سیاست بهینه
+- english: Optimal Policy Maximization
+  persian: بیشینه‌سازی سیاست بهینه
+

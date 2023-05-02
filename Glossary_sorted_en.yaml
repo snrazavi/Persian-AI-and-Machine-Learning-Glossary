@@ -160,6 +160,10 @@
   persian: تغییر هم‌متغیر
 - english: Cross Validation
   persian: اعتبارسنجی ضربدری
+- english: Cumulative Reward
+  persian: پاداش تجمعی
+- english: Cumulative Reward Maximization
+  persian: بیشینه‌سازی پاداش تجمعی
 - english: Data Analysis
   persian: تحلیل داده
 - english: Data Analyst
@@ -572,6 +576,12 @@
   persian: نرخ یادگیری
 - english: Learning Rate Decay
   persian: کاهش نرخ یادگیری
+- english: Likelihood
+  persian: درست‌نمایی
+- english: Likelihood Function
+  persian: تابع درست‌نمایی
+- english: Likelihood Maximization
+  persian: بیشینه‌سازی درست‌نمایی
 - english: Linear Regression
   persian: رگرسیون خطی
 - english: Logistic Regression
@@ -598,6 +608,14 @@
   persian: زنجیره مارکوف
 - english: Markov Desicion Process
   persian: فرایند تصمیم مارکوف
+- english: Maximization
+  persian: بیشینه‌سازی
+- english: Maximum
+  persian: بیشینه
+- english: Maximum Likelihood
+  persian: بیشینه درست‌نمایی
+- english: Maximum Likelihood Estimation
+  persian: تخمین بیشینه درست‌نمایی
 - english: Mean Absolute Deviation
   persian: انحراف مطلق میانگین
 - english: Mean Absolute Error
@@ -634,6 +652,10 @@
   persian: ریز-دسته
 - english: Mini-Batch Gradient Descent
   persian: کاهش گرادیان ریز-دسته‌ای
+- english: Minimization
+  persian: کمینه‌سازی
+- english: Minimum
+  persian: کمینه
 - english: Missing Data
   persian: داده گم‌شده
 - english: Missing Value
@@ -702,6 +724,10 @@
   persian: اعتبارسنجی مدل
 - english: Momentum
   persian: شتاب؛ ممنتوم
+- english: Monte Carlo
+  persian: مونته کارلو
+- english: Monte Carlo Method
+  persian: روش مونته کارلو
 - english: Multilayer Perceptron
   persian: پرسپترون چندلایه
 - english: Multinomial Logistic Regression
@@ -754,6 +780,14 @@
   persian: پیش‌بینی برخط
 - english: Online Training
   persian: آموزش برخط
+- english: Optimal
+  persian: بهینه
+- english: Optimal Policy
+  persian: سیاست بهینه
+- english: Optimal Policy Function
+  persian: تابع سیاست بهینه
+- english: Optimal Policy Maximization
+  persian: بیشینه‌سازی سیاست بهینه
 - english: Ordinal Feature
   persian: ویژگی ترتیبی
 - english: Ordinal Variable
@@ -764,8 +798,20 @@
   persian: بیش‌نمونه‌برداری
 - english: Pearson Correlation Coefficient
   persian: ضریب همبستگی پیرسون
+- english: Penalty
+  persian: جریمه
+- english: Penalty Function
+  persian: تابع جریمه
+- english: Penalty Minimization
+  persian: کمینه‌سازی جریمه
 - english: Perceptron
   persian: پرسپترون
+- english: Policy
+  persian: سیاست
+- english: Policy Gradient
+  persian: گرادیان سیاست
+- english: Policy Gradient Method
+  persian: روش گرادیان سیاست
 - english: Polynomial Regression
   persian: رگرسیون چندجمله‌ای
 - english: Precision
@@ -840,6 +886,16 @@
   persian: نمونه‌برداری مخزنی
 - english: Responsible AI
   persian: هوش مصنوعی مسؤولانه
+- english: Reward
+  persian: پاداش
+- english: Reward Function
+  persian: تابع پاداش
+- english: Reward Maximization
+  persian: بیشینه‌سازی پاداش
+- english: Reward-Penalty
+  persian: پاداش-جریمه
+- english: Reward-Penalty Function
+  persian: تابع پاداش-جریمه
 - english: Root Mean Squared Error
   persian: خطای ریشه میانگین مربعات
 - english: Row-major Format
