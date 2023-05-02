@@ -670,10 +670,18 @@
   persian: مرکز داده
 - english: Imbalanced Classification Problem
   persian: مسئله طبقه‌بندی نامتوازن
+- english: Area Under the Curve
+  persian: مساحت زیر منحنی
+- english: Area Under the ROC Curve
+  persian: مساحت زیر منحنی ROC
+- english: Area Under the Receiver Operating Characteristic Curve
+  persian: مساحت زیر منحنی مشخصه کارکرد گیرنده
 - english: Observability
   persian: مشاهده‌پذیری
 - english: Model Obseravability
   persian: مشاهده‌پذیری مدل
+- english: Receiver Operating Characteristic
+  persian: مشخصه کارکرد گیرنده
 - english: Transformer Architecture
   persian: معماری تبدیل‌گر
 - english: Model Architecture
@@ -690,6 +698,10 @@
   persian: مقیاس‌پذیر
 - english: Scalability
   persian: مقیاس‌پذیری
+- english: ROC Curve
+  persian: منحنی ROC
+- english: Receiver Operating Characteristic Curve
+  persian: منحنی مشخصه کارکرد گیرنده
 - english: False Negative
   persian: منفی غلط
 - english: True Negative

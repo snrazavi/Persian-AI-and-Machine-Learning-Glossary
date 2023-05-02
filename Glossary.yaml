@@ -940,3 +940,15 @@
   persian: عامل یادگیری Q
 - english: Reinforcement Learning with Human Feedback
   persian: یادگیری تقویتی با بازخورد انسانی
+- english: Receiver Operating Characteristic
+  persian: مشخصه کارکرد گیرنده
+- english: Receiver Operating Characteristic Curve
+  persian: منحنی مشخصه کارکرد گیرنده
+- english: ROC Curve
+  persian: منحنی ROC
+- english: Area Under the Curve
+  persian: مساحت زیر منحنی
+- english: Area Under the ROC Curve
+  persian: مساحت زیر منحنی ROC
+- english: Area Under the Receiver Operating Characteristic Curve
+  persian: مساحت زیر منحنی مشخصه کارکرد گیرنده

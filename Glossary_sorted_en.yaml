@@ -16,6 +16,12 @@
   persian: ماتریس همسایگی
 - english: Anomaly Detection
   persian: تشخیص ناهنجاری
+- english: Area Under the Curve
+  persian: مساحت زیر منحنی
+- english: Area Under the ROC Curve
+  persian: مساحت زیر منحنی ROC
+- english: Area Under the Receiver Operating Characteristic Curve
+  persian: مساحت زیر منحنی مشخصه کارکرد گیرنده
 - english: Artificial General Intelligence
   persian: هوش عمومی مصنوعی
 - english: Artificial Intelligence
@@ -724,6 +730,8 @@
   persian: عامل یادگیری Q
 - english: Q-Learning Algorithm
   persian: الگوریتم یادگیری Q
+- english: ROC Curve
+  persian: منحنی ROC
 - english: Random Cut Forest
   persian: جنگل برش تصادفی
 - english: Random Forest
@@ -732,6 +740,10 @@
   persian: جستجوی تصادفی
 - english: Recall
   persian: بازخوانی
+- english: Receiver Operating Characteristic
+  persian: مشخصه کارکرد گیرنده
+- english: Receiver Operating Characteristic Curve
+  persian: منحنی مشخصه کارکرد گیرنده
 - english: Recommender System
   persian: سامانه پیشنهاددهنده
 - english: Rectified Linear Unit
