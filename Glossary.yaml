@@ -17,7 +17,9 @@
 - english: Underfitting
   persian: کم‌برازش
 - english: Bias
-  persian: سوگیری 
+  persian: سوگیری
+- english: Biased
+  persian: سوگیر؛ سودار؛ سوگیرانه
 - english: Data Leakage
   persian: نشت داده
 - english: Temporal Leakage

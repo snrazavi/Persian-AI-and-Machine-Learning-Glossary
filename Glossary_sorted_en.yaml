@@ -54,6 +54,8 @@
   persian: بهینه‌سازی بیزی
 - english: Bias
   persian: سوگیری
+- english: Biased
+  persian: سوگیر؛ سودار؛ سوگیرانه
 - english: Bidirectional Recurrent Neural Network
   persian: شبکه عصبی بازگشتی دوسویه
 - english: Binary Classification
