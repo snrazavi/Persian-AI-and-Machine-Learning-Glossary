@@ -666,10 +666,10 @@
   persian: مجموعه آزمون
 - english: Training Set
   persian: مجموعه آموزشی
-- english: CUDA Toolkit
-  persian: مجموعه ابزار کودا
 - english: Validation Set
   persian: مجموعه اعتبارسنجی
+- english: CUDA Toolkit
+  persian: مجموعه‌ابزار کودا
 - english: Purturbed Dataset
   persian: مجموعه‌داده اختلال‌دار
 - english: Imbalanced Dataset
