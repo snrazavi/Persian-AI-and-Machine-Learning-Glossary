@@ -1104,3 +1104,7 @@
   persian: خط لوله دریافت داده؛ خط لوله هضم داده
 - english: Data Ingestion Process
   persian: فرآیند دریافت داده؛ فرآیند هضم داده
+- english: Latency
+  persian: درنگ
+- english: Throughput
+  persian: نرخ پردازش
