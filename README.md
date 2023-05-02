@@ -37,3 +37,8 @@ When suggesting a new term or translation, please ensure that it is relevant to 
 If you have any questions, feedback, or suggestions, please feel free to open an issue or reach out to us through the repository's discussions section. We value your input and look forward to collaborating with you on this project.
 
 **Let's work together to make AI and machine learning more accessible to the Persian-speaking community!**
+
+## License
+
+This project is licensed under the MIT License. You are free to share and adapt the material for any purpose, even commercially, as long as you give appropriate credit, provide a link to the license, and indicate if changes were made. See the [LICENSE](LICENSE) file for more information.
+
