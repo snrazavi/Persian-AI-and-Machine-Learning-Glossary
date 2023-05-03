@@ -3,9 +3,19 @@ import yaml
 
 class Glossary:
     """A class for loading, saving, searching, and adding to the dictionary"""
-    def __init__(self, dictionary_file="Glossary_for_ratings.yaml") -> None:
+    def __init__(self, dictionary_file, s3, bucket_name, glossary_file_key) -> None:
         """Initialize the dictionary"""
         self.dictionary_file = dictionary_file
+        self.s3 = s3
+        self.bucket_name = bucket_name
+        self.glossary_file_key = glossary_file_key
+        self.read_from_s3()
+
+    def read_from_s3(self):
+        """Load the dictionary from S3"""
+        with open(self.dictionary_file, 'wb') as file:
+            self.s3.download_fileobj(self.bucket_name, self.glossary_file_key, file)
+
         self._load_dictionary()
 
     def _load_dictionary(self):
@@ -20,10 +30,18 @@ class Glossary:
         self.dictionary = dictionary
 
 
+    def save_to_s3(self):
+        """Save the dictionary to S3"""
+        with open(self.dictionary_file, 'rb') as file:
+            self.s3.upload_fileobj(file, self.bucket_name, self.glossary_file_key)
+
+
     def save_dictionary(self):
         """Save the dictionary to a YAML file"""
         with open(self.dictionary_file, "w", encoding="utf-8") as file:
             yaml.dump(self.dictionary, file, allow_unicode=True)
+
+        self.save_to_s3()
 
 
     def search_dictionary(self, term):

@@ -52,8 +52,8 @@ artificial intelligence:
   rating: 4.0
   rating_no: 15
 - persian: هوش مصنوعی
-  rating: 2.0
-  rating_no: 3
+  rating: 2.5
+  rating_no: 4
 artificial super intelligence:
 - persian: ابرهوش برساخته
   rating: 2.5
@@ -1773,4 +1773,8 @@ workflow:
   rating: 0
 workflow management:
 - persian: مدیریت کارروند
+  rating: 0
+zzzz:
+- approved: false
+  persian: جمله تست
   rating: 0

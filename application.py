@@ -1,6 +1,7 @@
 """This is the main application file for the Persian-English glossary web app."""
-import os
+import boto3
 import difflib
+# import os
 # from dotenv import load_dotenv
 from flask import (
     Flask,
@@ -21,7 +22,12 @@ application = Flask(__name__)
 application.secret_key = "my_unique_secret_key"  # os.environ.get("SECRET_KEY")
 
 
-glossary = Glossary(dictionary_file="Glossary_for_ratings.yaml")
+s3 = boto3.client('s3')
+bucket_name = 'nrazavi'
+glossary_file_key = 'Glossary_for_ratings.yaml'
+
+glossary = Glossary("Glossary_for_ratings.yaml", s3, bucket_name, glossary_file_key)
+
 
 
 @application.route("/", methods=["GET", "POST"])
