@@ -14,6 +14,11 @@ def load_dictionary():
     # convert the list of dictionaries to a dictionary
     # dictionary = {entry['english'].lower(): entry['persian'] for entry in dictionary}
     # dictionary = {entry['english'].lower(): entry['translations'] for entry in dictionary}
+
+    # sort the dictionary for each term based on the rating
+    for term in dictionary:
+        dictionary[term] = sorted(dictionary[term], key=lambda x: x['rating'], reverse=True)
+
     return dictionary
 
 
@@ -101,6 +106,10 @@ def rate_translation():
                 rating = round(rating * 2) / 2
                 translation_entry["rating"] = rating
                 print(f"Rating for {english_term} - {persian_translation} updated to {rating}")
+                # sort the translations based on the rating
+                translations = sorted(translations, key=lambda x: x['rating'], reverse=True)
+                # update the dictionary
+                dictionary[english_term.lower()] = translations
                 break
         save_dictionary(dictionary)
 
