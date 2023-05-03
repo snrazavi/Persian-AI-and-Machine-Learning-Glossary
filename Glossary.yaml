@@ -481,9 +481,9 @@
 - english: False Negative Ratio
   persian: نسبت منفی غلط
 - english: Sensitivity
-  persian: حساسیت
+  persian: نرخ تشخیص مثبت
 - english: Specificity
-  persian: اختصاصیت
+  persian: نرخ تشخیص منفی
 - english: Confusion Matrix
   persian: ماتریس درهم‌ریختگی
 - english: Production-ready Model

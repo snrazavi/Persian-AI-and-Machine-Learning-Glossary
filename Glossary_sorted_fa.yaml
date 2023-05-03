@@ -22,8 +22,6 @@
   persian: آموزش مدل
 - english: Artificial Super Intelligence
   persian: ابرهوش مصنوعی
-- english: Specificity
-  persian: اختصاصیت
 - english: Purturbation
   persian: اختلال
 - english: Model Performance Evaluation
@@ -422,8 +420,6 @@
   persian: حافظه بلند کوتاه‌مدت
 - english: Data Governance
   persian: حاکمیت داده
-- english: Sensitivity
-  persian: حساسیت
 - english: Data Pipeline
   persian: خط لوله داده
 - english: Data Ingestion Pipeline
@@ -492,6 +488,8 @@
   persian: درخت تقویت‌شده با گرادیان
 - english: Likelihood
   persian: درست‌نمایی
+- english: Latency
+  persian: درنگ
 - english: Feature Hashing
   persian: درهم‌سازی ویژگی
 - english: Data Ingestion
@@ -826,6 +824,10 @@
   persian: مونته کارلو
 - english: Recall
   persian: نرخ بازیابی؛ نرخ یادآوری
+- english: Sensitivity
+  persian: نرخ تشخیص مثبت
+- english: Specificity
+  persian: نرخ تشخیص منفی
 - english: Dropout Rate
   persian: نرخ دورریزی
 - english: Precision
@@ -840,6 +842,8 @@
   persian: نرخ منفی واقعی
 - english: Sampling Rate
   persian: نرخ نمونه‌برداری
+- english: Throughput
+  persian: نرخ پردازش؛ نرخ گذر؛ نرخ گذردهی
 - english: Learning Rate
   persian: نرخ یادگیری
 - english: Batch Normalization
