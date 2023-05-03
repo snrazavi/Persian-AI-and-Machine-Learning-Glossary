@@ -10,15 +10,14 @@ from helpers import generate_star_rating
 load_dotenv()
 
 
-app = Flask(__name__)
-application = app
-app.secret_key = os.environ.get("SECRET_KEY")
+apapplication = Flask(__name__)
+application.secret_key = os.environ.get("SECRET_KEY")
 
 
 glossary = Glossary(dictionary_file="Glossary_for_ratings.yaml")
 
 
-@app.route("/", methods=["GET", "POST"])
+@application.route("/", methods=["GET", "POST"])
 def index():
     """Home page"""
     if request.method == "POST":
@@ -52,7 +51,7 @@ def index():
             return redirect(url_for("index"))
     return render_template("index.html")
 
-@app.route("/rate_translation", methods=["POST"])
+@appapplication.route("/rate_translation", methods=["POST"])
 def rate_translation():
     """Rate a translation"""
     english_term = request.form.get("term")
@@ -69,4 +68,4 @@ def rate_translation():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+    application.run(host="0.0.0.0", port=80)
