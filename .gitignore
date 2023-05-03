@@ -8,6 +8,7 @@ old_glossary.py
 Glossary.yaml
 Glossary_sorted_en.yaml
 Glossary_sorted_fa.yaml
+instructions.md
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
