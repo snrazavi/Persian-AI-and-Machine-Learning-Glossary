@@ -1,5 +1,6 @@
 """This is the main application file for the Persian-English glossary web app."""
-import os
+import boto3
+# import os
 import difflib
 # from dotenv import load_dotenv
 from flask import (
@@ -20,8 +21,14 @@ from helpers import generate_star_rating
 application = Flask(__name__)
 application.secret_key = "my_unique_secret_key"  # os.environ.get("SECRET_KEY")
 
+s3 = boto3.client("s3")
+bucket_name = "snrazavi"
+glossary_file_key = "Glossary_for_ratings.yaml"
 
-glossary = Glossary(dictionary_file="Glossary_for_ratings.yaml")
+
+glossary = Glossary("Glossary_for_ratings.yaml",
+                    s3=s3, bucket_name=bucket_name,
+                    glossary_file_key=glossary_file_key)
 
 
 @application.route("/", methods=["GET", "POST"])
@@ -34,7 +41,8 @@ def index():
 
             if translations is None:
                 # find the closest match to the term
-                closest_match = difflib.get_close_matches(term, glossary.dictionary.keys(), n=1, cutoff=0.6)
+                closest_match = difflib.get_close_matches(
+                    term, glossary.dictionary.keys(), n=1, cutoff=0.6)
                 if closest_match:
                     similar_term = closest_match[0]
                     translations = glossary.search_dictionary(similar_term)
@@ -52,7 +60,8 @@ def index():
             persian_translation = request.form.get("new-persian-translation")
 
             if glossary.add_translation(english_term, persian_translation):
-                flash("Thank you for your contribution! Your suggestion will be added to the dictionary after approval.")
+                flash("Thank you for your contribution!\
+                      Your suggestion will be added to the dictionary after approval.")
             else:
                 flash("This translation alreadys exists in the dictionary!")
             return redirect(url_for("index"))
