@@ -1,7 +1,7 @@
 """This is the main application file for the Persian-English glossary web app."""
 import boto3
 import difflib
-# import os
+import os
 # from dotenv import load_dotenv
 from flask import (
     Flask,
@@ -21,13 +21,19 @@ from helpers import generate_star_rating
 application = Flask(__name__)
 application.secret_key = "my_unique_secret_key"  # os.environ.get("SECRET_KEY")
 
+# read access key and secret access key from environment variables
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
-s3 = boto3.client('s3')
+s3 = boto3.client(service_name='s3',
+                    aws_access_key_id=AWS_ACCESS_KEY_ID,
+                    aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+                    region_name='us-west-2')
+
 bucket_name = 'snrazavi'
 glossary_file_key = 'Glossary_for_ratings.yaml'
 
 glossary = Glossary("Glossary_for_ratings.yaml", s3, bucket_name, glossary_file_key)
-
 
 
 @application.route("/", methods=["GET", "POST"])
@@ -71,7 +77,7 @@ def rate_translation():
     translation_index = request.form.get("translation_index")
     new_rating = int(request.form.get("new_rating"))
 
-    if new_rating is not None and new_rating in range(1, 6):
+    if new_rating is not None and new_rating in range(0, 6):
         glossary.update_rating(english_term, translation_index, new_rating)
         flash("Thank you for your rating!")
     else:
