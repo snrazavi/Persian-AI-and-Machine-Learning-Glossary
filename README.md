@@ -22,13 +22,16 @@ The glossary is available in the following formats:
 
 ## Contributing
 
-We encourage you to contribute to this project by suggesting new terms, providing translations, or refining existing translations. Your contributions will help make this glossary more comprehensive and valuable for the Persian-speaking AI and machine learning community. To contribute, please follow these steps:
+![Screenshot](images/Screenshot.jpg)
+We welcome contributions from the community! You can contribute to this project by visiting the deployed web app and following these steps. Your contributions will help make this glossary more comprehensive and valuable for the Persian-speaking AI and machine learning community.
 
-1. Fork the repository.
-2. Create a new branch with a descriptive name (e.g., add-term-xyz or refine-translation-abc).
-3. Add your suggested term(s) and/or translation(s) to the appropriate file(s) (only the `Glossary.yaml` file which is not sorted) or create a new file if necessary.
-4. Commit your changes with a clear and concise message describing your contribution.
-5. Create a pull request, explaining the changes you've made and their importance.
+1. **Rating existing translations**: Browse the dictionary and rate the translations you find. Your ratings will help improve the quality of the translations shown in future searches.
+
+2. **Adding new translations for existing terms**: If you find a term that has no translation or you believe you can provide a better translation, please feel free to add your suggestion. Your contribution will be reviewed, and if approved, it will be added to the dictionary.
+
+3. **Adding new terms and their corresponding translations**: If you come across a term that is not present in the dictionary, you can add the term along with its translation. Your submission will be reviewed, and if approved, it will be added to the dictionary.
+
+To get started, visit the [deployed web app](your_web_app_link_here) and start contributing. Thank you for your support!
 
 When suggesting a new term or translation, please ensure that it is relevant to the field of AI and machine learning, and that the translation is accurate and clear. We appreciate your help in maintaining the quality and consistency of the glossary.
 
