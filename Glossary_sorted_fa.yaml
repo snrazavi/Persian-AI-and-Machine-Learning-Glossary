@@ -21,7 +21,7 @@
 - english: Model Training
   persian: آموزش مدل
 - english: Artificial Super Intelligence
-  persian: ابرهوش مصنوعی
+  persian: ابرهوش مصنوعی؛ ابرهوش برساخته؛ هوش مصنوعی فرازیانه
 - english: Purturbation
   persian: اختلال
 - english: Model Performance Evaluation
@@ -744,10 +744,16 @@
   persian: مجموعه‌داده نامتوازن
 - english: Edge Computing
   persian: محاسبات لبه
+- english: Artifact
+  persian: محصول جانبی
+- english: Model Artifact
+  persian: محصول جانبی مدل
 - english: Object Localization
   persian: محل‌یابی اشیا
 - english: Gradient vanishing
   persian: محو گرادیان
+- english: Artifact Repository
+  persian: مخزن محصولات جانبی
 - english: Production-ready Model
   persian: مدل آماده برای تولید
 - english: Transformer Model
@@ -816,6 +822,8 @@
   persian: مهندس داده
 - english: Feature Engineering
   persian: مهندسی ویژگی
+- english: Latency-Throughput Trade-off
+  persian: موازنه درنگ-نرخ گذر
 - english: Bias-Variance Trade-off
   persian: موازنه سوگیری-واریانس
 - english: Data Stream Processing Engine
@@ -843,7 +851,7 @@
 - english: Sampling Rate
   persian: نرخ نمونه‌برداری
 - english: Throughput
-  persian: نرخ پردازش؛ نرخ گذر؛ نرخ گذردهی
+  persian: نرخ گذر؛ نرخ گذردهی
 - english: Learning Rate
   persian: نرخ یادگیری
 - english: Batch Normalization
@@ -914,10 +922,6 @@
   persian: هم‌بستگی
 - english: Covariance
   persian: هم‌واریانس
-- english: Artificial General Intelligence
-  persian: هوش عمومی مصنوعی
-- english: Artificial Intelligence
-  persian: هوش مصنوعی
 - english: Human-in-the-Loop AI
   persian: هوش مصنوعی انسان-در-حلقه
 - english: Human-Centered AI
@@ -930,6 +934,10 @@
   persian: هوش مصنوعی شتاب‌یافته با جی‌پی‌یو
 - english: Responsible AI
   persian: هوش مصنوعی مسؤولانه
+- english: Artificial Intelligence
+  persian: هوش مصنوعی؛ هوش برساخته
+- english: Artificial General Intelligence
+  persian: هوش همگانی مصنوعی؛ هوش همگانی برساخته
 - english: Gated Recurrent Unit
   persian: واحد بازگشتی دروازه‌ای
 - english: Rectified Linear Unit

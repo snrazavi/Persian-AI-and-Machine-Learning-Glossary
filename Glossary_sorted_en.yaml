@@ -22,12 +22,16 @@
   persian: مساحت زیر منحنی راک
 - english: Area Under the Receiver Operating Characteristic Curve
   persian: مساحت زیر منحنی مشخصه کارکرد گیرنده
+- english: Artifact
+  persian: محصول جانبی
+- english: Artifact Repository
+  persian: مخزن محصولات جانبی
 - english: Artificial General Intelligence
-  persian: هوش عمومی مصنوعی
+  persian: هوش همگانی مصنوعی؛ هوش همگانی برساخته
 - english: Artificial Intelligence
-  persian: هوش مصنوعی
+  persian: هوش مصنوعی؛ هوش برساخته
 - english: Artificial Super Intelligence
-  persian: ابرهوش مصنوعی
+  persian: ابرهوش مصنوعی؛ ابرهوش برساخته؛ هوش مصنوعی فرازیانه
 - english: Attention Layer
   persian: لایه توجه
 - english: Attention Mechanism
@@ -584,6 +588,8 @@
   persian: داده برچسب‌دار
 - english: Latency
   persian: درنگ
+- english: Latency-Throughput Trade-off
+  persian: موازنه درنگ-نرخ گذر
 - english: Latent Dirichlet Allocation
   persian: تخصیص نهان دیریکله
 - english: Latent Factor
@@ -686,6 +692,8 @@
   persian: معماری مدل
 - english: Model Architecture Design
   persian: طراحی معماری مدل
+- english: Model Artifact
+  persian: محصول جانبی مدل
 - english: Model Compression
   persian: فشرده‌سازی مدل
 - english: Model Deployment
@@ -1033,7 +1041,7 @@
 - english: Text-to-Video
   persian: متن به ویدیو
 - english: Throughput
-  persian: نرخ پردازش؛ نرخ گذر؛ نرخ گذردهی
+  persian: نرخ گذر؛ نرخ گذردهی
 - english: Time Series
   persian: سری زمانی؛ دنباله زمانی
 - english: Training Sample

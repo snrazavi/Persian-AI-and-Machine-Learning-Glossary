@@ -1,5 +1,5 @@
 - english: Artificial Intelligence
-  persian: هوش مصنوعی
+  persian: هوش مصنوعی؛ هوش برساخته
 - english: Machine Learning
   persian: یادگیری ماشین
 - english: Training Set
@@ -931,9 +931,9 @@
 - english: Human-Centered AI
   persian: هوش مصنوعی انسان‌محور
 - english: Artificial General Intelligence
-  persian: هوش عمومی مصنوعی
+  persian: هوش همگانی مصنوعی؛ هوش همگانی برساخته
 - english: Artificial Super Intelligence
-  persian: ابرهوش مصنوعی
+  persian: ابرهوش مصنوعی؛ ابرهوش برساخته؛ هوش مصنوعی فرازیانه
 - english: Model Architecture
   persian: معماری مدل
 - english: Model Architecture Design
@@ -1107,4 +1107,12 @@
 - english: Latency
   persian: درنگ
 - english: Throughput
-  persian: نرخ پردازش؛ نرخ گذر؛ نرخ گذردهی
+  persian: نرخ گذر؛ نرخ گذردهی
+- english: Latency-Throughput Trade-off
+  persian: موازنه درنگ-نرخ گذر
+- english: Artifact
+  persian: محصول جانبی
+- english: Artifact Repository
+  persian: مخزن محصولات جانبی
+- english: Model Artifact
+  persian: محصول جانبی مدل
