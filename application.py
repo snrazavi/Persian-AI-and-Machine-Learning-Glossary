@@ -2,7 +2,14 @@ import os
 import yaml
 import difflib
 from dotenv import load_dotenv
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import (
+    Flask,
+    render_template,
+    request,
+    redirect,
+    url_for,
+    flash
+)
 
 from glossary import Glossary
 from helpers import generate_star_rating
@@ -10,7 +17,7 @@ from helpers import generate_star_rating
 load_dotenv()
 
 
-apapplication = Flask(__name__)
+application = Flask(__name__)
 application.secret_key = os.environ.get("SECRET_KEY")
 
 
@@ -51,7 +58,7 @@ def index():
             return redirect(url_for("index"))
     return render_template("index.html")
 
-@appapplication.route("/rate_translation", methods=["POST"])
+@application.route("/rate_translation", methods=["POST"])
 def rate_translation():
     """Rate a translation"""
     english_term = request.form.get("term")
