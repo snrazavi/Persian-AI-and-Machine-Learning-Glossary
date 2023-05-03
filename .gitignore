@@ -2,4 +2,6 @@ __pycache__
 .env
 .venv
 
+old_main.py
+old_glossary.py
 Glossary_for_ratings.yaml
