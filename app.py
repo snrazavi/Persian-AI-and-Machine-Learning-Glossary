@@ -1,9 +1,14 @@
-from flask import Flask, render_template, request, redirect, url_for
+import os
 import yaml
 import difflib
+from dotenv import load_dotenv
+from flask import Flask, render_template, request, redirect, url_for, flash
+
+load_dotenv()
 
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY")
 
 
 def load_dictionary():
@@ -67,22 +72,32 @@ def index():
                     similar_term = closest_match[0]
                     print(f"Most similar term: {similar_term}")
                     translations = dictionary.get(similar_term)
+                    translations = [translation for translation in translations 
+                                    if translation.get('approved', True)]
                     return render_template(
                         "index.html", translations=translations, 
                         term=similar_term, original_term=term)
                 else:
                     return render_template("index.html", not_found=True, term=term)
             else:
+                translations = [translation for translation in translations 
+                                if translation.get('approved', True)]
                 return render_template("index.html", translations=translations, term=term)
         elif "new-english-term" in request.form and "new-persian-translation" in request.form:
             english_term = request.form.get("new-english-term")
             persian_translation = request.form.get("new-persian-translation")
-            new_entry = {"translation": persian_translation, "rating": 0}
+            new_entry = {"persian": persian_translation, "rating": 0, 'approved': False}
+            # check if the persian translation already exists in the dictionary
+            for entry in dictionary.get(english_term.lower(), []):
+                if entry["persian"] == persian_translation:
+                    flash("This translation already exists in the dictionary!")
+                    return redirect(url_for("index"))
             if english_term.lower() in dictionary:
                 dictionary[english_term.lower()].append(new_entry)
             else:
                 dictionary[english_term.lower()] = [new_entry]
             save_dictionary(dictionary)
+            flash("Thank you for your contribution! Your suggestion will be added to the dictionary after approval.")
             return redirect(url_for("index"))
     return render_template("index.html")
 
