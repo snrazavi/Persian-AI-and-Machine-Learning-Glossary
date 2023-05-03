@@ -1,6 +1,6 @@
 # Persian-AI-and-Machine-Learning-Glossary
 
-[Visit the web app here!](http://ai-ml-glossary-env.eba-h7y6b3yp.us-west-2.elasticbeanstalk.com/)
+[<img src="images/new_icon.png" width="24" height="24" alt="Icon"/>[Visit the web app here!](http://ai-ml-glossary-env.eba-h7y6b3yp.us-west-2.elasticbeanstalk.com/)
 
 This repository contains the source code for a Flask-based English-Persian AI and ML Glossary web application. Users can search for English terms and view their Persian translations, rate translations, and contribute new translations.
 
