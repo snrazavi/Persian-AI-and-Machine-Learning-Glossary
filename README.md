@@ -14,7 +14,7 @@ You can use this glossary as a reference when reading or writing about AI and ma
 
 ## Features
 
-![Screenshot](images/Screenshot.jpg)
+![Screenshot](images/Screenshot.png)
 
 This web app offers a user-friendly interface to search for English terms and find their Persian translations. The current features include:
 
