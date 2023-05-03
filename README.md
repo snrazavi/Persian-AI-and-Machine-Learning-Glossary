@@ -28,7 +28,7 @@ This web app offers a user-friendly interface to search for English terms and fi
 
 - **Adding new terms and their translations**: Users can add new terms and their translations to the dictionary, helping expand the dictionary's coverage of English-Persian translations.
 
-Visit the [deployed web app](your_web_app_link_here) to explore these features and contribute to the dictionary.
+Visit the [deployed web app](http://ai-ml-glossary-env.eba-h7y6b3yp.us-west-2.elasticbeanstalk.com/) to explore these features and contribute to the dictionary.
 
 ## Contributing
 
@@ -40,7 +40,7 @@ We welcome contributions from the community! You can contribute to this project 
 
 3. **Adding new terms and their corresponding translations**: If you come across a term that is not present in the dictionary, you can add the term along with its translation. Your submission will be reviewed, and if approved, it will be added to the dictionary.
 
-To get started, visit the [deployed web app](your_web_app_link_here) and start contributing. Thank you for your support!
+To get started, visit the [deployed web app](http://ai-ml-glossary-env.eba-h7y6b3yp.us-west-2.elasticbeanstalk.com/) and start contributing. Thank you for your support!
 
 When suggesting a new term or translation, please ensure that it is relevant to the field of AI and machine learning, and that the translation is accurate and clear. We appreciate your help in maintaining the quality and consistency of the glossary.
 
