@@ -30,7 +30,6 @@ This web app offers a user-friendly interface to search for English terms and fi
 
 Visit the [deployed web app](your_web_app_link_here) to explore these features and contribute to the dictionary.
 
-
 ## Contributing
 
 We welcome contributions from the community! You can contribute to this project by visiting the deployed web app and following these steps. Your contributions will help make this glossary more comprehensive and valuable for the Persian-speaking AI and machine learning community.
