@@ -4,4 +4,7 @@ __pycache__
 
 old_main.py
 old_glossary.py
-Glossary_for_ratings.yaml
+# Glossary_for_ratings.yaml
+Glossary.yaml
+Glossary_sorted_en.yaml
+Glossary_sorted_fa.yaml

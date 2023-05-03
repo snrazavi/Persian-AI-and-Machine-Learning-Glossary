@@ -4,7 +4,7 @@ import difflib
 from dotenv import load_dotenv
 from flask import Flask, render_template, request, redirect, url_for, flash
 
-from dictionary_operations import Glossary
+from glossary import Glossary
 from helpers import generate_star_rating
 
 load_dotenv()
