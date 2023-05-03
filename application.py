@@ -1,7 +1,7 @@
 """This is the main application file for the Persian-English glossary web app."""
 import os
 import difflib
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from flask import (
     Flask,
     render_template,
@@ -14,11 +14,11 @@ from flask import (
 from glossary import Glossary
 from helpers import generate_star_rating
 
-load_dotenv()
+# load_dotenv()
 
 
 application = Flask(__name__)
-application.secret_key = os.environ.get("SECRET_KEY")
+application.secret_key = "my_unique_secret_key"  # os.environ.get("SECRET_KEY")
 
 
 glossary = Glossary(dictionary_file="Glossary_for_ratings.yaml")
