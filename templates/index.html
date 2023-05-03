@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to Persian Dictionary</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <input type="text" name="search-term" placeholder="Search for an English term...">
+        <button type="submit">Search</button>
+    </form>
+
+    {% if translations %}
+    <div>
+        {% if original_term %}
+        <p>Term {{ original_term }} not found. Showing results for the most similar term:</p>
+        {% endif %}
+        <h3>{{ term }}:</h3>
+        <ul>
+            {{ translations }}
+            <!-- {% for translation in translations %}
+            <li>
+                {{ translation.translation }} (Rating: {{ translation.rating }})
+                <form action="/rate_translation" method="post" style="display: inline;">
+                    <input type="hidden" name="english_term" value="{{ term }}">
+                    <input type="hidden" name="persian_translation" value="{{ translation.translation }}">
+                    <select name="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button type="submit">Rate</button>
+                </form>
+            </li>
+            {% endfor %} -->
+        </ul> 
+    </div>
+    {% elif not_found %}
+    <p>No resaults found for "{{ term }}".</p>
+    {% endif %}
+
+    <form action="/" method="post">
+        <input type="text" name="new-english-term" placeholder="English term...">
+        <input type="text" name="new-persian-translation" placeholder="Persian translation...">
+        <button type="submit">Add Translation</button>
+    </form>
+</body>
+</html>
