@@ -1,5 +1,5 @@
+"""This is the main application file for the Persian-English glossary web app."""
 import os
-import yaml
 import difflib
 from dotenv import load_dotenv
 from flask import (
