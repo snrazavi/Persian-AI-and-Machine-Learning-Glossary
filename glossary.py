@@ -86,3 +86,26 @@ class Glossary:
             raise ValueError('language should be either "en" or "fa"')
 
         return sorted_glossary
+    
+    def convert_glossary_format_for_ratings(self) -> list[dict]:
+        """
+        Convert the glossary format to the format required for ratings
+        :return: glossary in the format required for ratings
+        """
+        glossary = []
+        for entry in self.glossary:
+            english = entry['english']
+            persian = entry['persian']
+            # split persian terms by semicolon
+            persian_terms = persian.split('؛')
+            translations = [{'persian': persian_term.strip(), 'rating': 0} for persian_term in persian_terms]
+            glossary.append({'english': english, 'translations': translations})
+
+        # save the glossary in the format required for ratings
+        self.write_glossary(glossary, 'Glossary_for_ratings.yaml')
+        return glossary
+
+
+if __name__ == '__main__':
+    enfa_glossary = Glossary('Glossary.yaml')
+    print(f"Number of terms in the glossary: {len(enfa_glossary)}")
