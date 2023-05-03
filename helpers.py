@@ -1,4 +1,8 @@
+"""Helper functions for the application"""
+
+
 def generate_star_rating(rating):
+    """Generate a star rating based on the rating"""
     full_star = '<i class="fas fa-star"></i>'
     empty_star = '<i class="far fa-star"></i>'
     half_star = '<i class="fas fa-star-half-alt"></i>'
