@@ -1,5 +1,9 @@
 # Persian-AI-and-Machine-Learning-Glossary
 
+[Visit the web app here!](http://ai-ml-glossary-env.eba-h7y6b3yp.us-west-2.elasticbeanstalk.com/)
+
+This repository contains the source code for a Flask-based English-Persian AI and ML Glossary web application. Users can search for English terms and view their Persian translations, rate translations, and contribute new translations.
+
 ## Introduction
 
 Welcome to the Persian AI and Machine Learning Glossary repository! This project aims to provide a comprehensive and up-to-date collection of Persian translations for technical terms and concepts in the field of artificial intelligence and machine learning. Our goal is to facilitate better communication and understanding of these complex topics for Persian-speaking learners, researchers, and practitioners.
