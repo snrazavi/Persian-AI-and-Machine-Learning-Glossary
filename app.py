@@ -11,6 +11,7 @@ load_dotenv()
 
 
 app = Flask(__name__)
+application = app
 app.secret_key = os.environ.get("SECRET_KEY")
 
 
@@ -68,4 +69,4 @@ def rate_translation():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=80)
