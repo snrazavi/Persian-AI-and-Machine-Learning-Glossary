@@ -84,7 +84,6 @@ def index():
 @app.route("/rate_translation", methods=["POST"])
 def rate_translation():
     """Rate a translation"""
-    print(dictionary)
     english_term = request.form.get("english-term")
     persian_translation = request.form.get("persian-translation")
     rating = int(request.form.get("rating"))
@@ -93,11 +92,16 @@ def rate_translation():
     if translations:
         for translation_entry in translations:
             if translation_entry["persian"] == persian_translation:
+                if "rating_no" not in translation_entry:
+                    translation_entry["rating_no"] = 0
+                translation_entry["rating_no"] += 1
+                # compute the new rating by a weighted average
+                rating = (translation_entry["rating_no"] * translation_entry["rating"] + rating) / (translation_entry["rating_no"] + 1)
+                # round the rating to the nearest 0.5#
+                rating = round(rating * 2) / 2
                 translation_entry["rating"] = rating
                 print(f"Rating for {english_term} - {persian_translation} updated to {rating}")
                 break
-
-        print(dictionary)
         save_dictionary(dictionary)
 
     return redirect(url_for("index"))
