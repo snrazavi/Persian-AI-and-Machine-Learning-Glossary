@@ -38,7 +38,7 @@
             <ul class="list-group">
                 {% for translation in translations %}
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    {{ translation.persian }} (Rating: {{ translation.rating }})
+                    {{ translation.persian }} ({{ translation.rating }})
                     <form action="/rate_translation" method="post">
                         <input type="hidden" name="english_term" value="{{ term }}">
                         <input type="hidden" name="persian_translation" value="{{ translation.persian }}">
