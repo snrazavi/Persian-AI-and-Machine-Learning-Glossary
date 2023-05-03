@@ -8,18 +8,19 @@ app = Flask(__name__)
 
 def load_dictionary():
     """Load the dictionary from a YAML file"""
-    with open("Glossary.yaml", "r", encoding="utf-8") as file:
+    with open("Glossary_for_ratings.yaml", "r", encoding="utf-8") as file:
         dictionary = yaml.safe_load(file)
 
     # convert the list of dictionaries to a dictionary
-    dictionary = {entry['english'].lower(): entry['persian'] for entry in dictionary}
+    # dictionary = {entry['english'].lower(): entry['persian'] for entry in dictionary}
+    # dictionary = {entry['english'].lower(): entry['translations'] for entry in dictionary}
     return dictionary
 
 
 def save_dictionary(dictionary):
     """Save the dictionary to a YAML file"""
-    with open("Glossary_internal.yaml", "w", encoding="utf-8") as file:
-        yaml.dump(dictionary, file)
+    with open("Glossary_for_ratings.yaml", "w", encoding="utf-8") as file:
+        yaml.dump(dictionary, file, allow_unicode=True)
 
 
 def search_dictionary(term):
@@ -45,7 +46,6 @@ def search_dictionary(term):
 
 
 dictionary = load_dictionary()
-
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -83,16 +83,21 @@ def index():
 
 @app.route("/rate_translation", methods=["POST"])
 def rate_translation():
-    english_term = request.form.get("english_term")
-    persian_translation = request.form.get("persian_translation")
+    """Rate a translation"""
+    print(dictionary)
+    english_term = request.form.get("english-term")
+    persian_translation = request.form.get("persian-translation")
     rating = int(request.form.get("rating"))
 
     translations = dictionary.get(english_term.lower())
     if translations:
         for translation_entry in translations:
-            if translation_entry["translation"] == persian_translation:
+            if translation_entry["persian"] == persian_translation:
                 translation_entry["rating"] = rating
+                print(f"Rating for {english_term} - {persian_translation} updated to {rating}")
                 break
+
+        print(dictionary)
         save_dictionary(dictionary)
 
     return redirect(url_for("index"))

@@ -18,13 +18,13 @@
         {% endif %}
         <h3>{{ term }}:</h3>
         <ul>
-            {{ translations }}
-            <!-- {% for translation in translations %}
+            <!-- {{ translations }} -->
+            {% for translation in translations %}
             <li>
-                {{ translation.translation }} (Rating: {{ translation.rating }})
+                {{ translation.persian }} (Rating: {{ translation.rating }})
                 <form action="/rate_translation" method="post" style="display: inline;">
-                    <input type="hidden" name="english_term" value="{{ term }}">
-                    <input type="hidden" name="persian_translation" value="{{ translation.translation }}">
+                    <input type="hidden" name="english-term" value="{{ term }}">
+                    <input type="hidden" name="persian-translation" value="{{ translation.persian }}">
                     <select name="rating">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -35,7 +35,7 @@
                     <button type="submit">Rate</button>
                 </form>
             </li>
-            {% endfor %} -->
+            {% endfor %}
         </ul> 
     </div>
     {% elif not_found %}
