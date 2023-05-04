@@ -60,11 +60,12 @@ class Glossary:
         # check if the translation is a valid entry, not empty
         if not persian_translation.strip():
             return False
-        
+
         new_entry = {"persian": persian_translation, "rating": 0, "approved": False}
 
         for entry in self.dictionary.get(english_term, []):
             if entry["persian"] == persian_translation:
+
                 return False
 
         if english_term in self.dictionary:
