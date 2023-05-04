@@ -12,6 +12,7 @@ from flask import (
     flash
 )
 
+from flask_sqlalchemy import SQLAlchemy
 from glossary import Glossary
 from helpers import generate_star_rating
 
@@ -20,6 +21,9 @@ from helpers import generate_star_rating
 
 application = Flask(__name__)
 application.secret_key = "my_unique_secret_key"  # os.environ.get("SECRET_KEY")
+application.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///glossary.db"
+application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db = SQLAlchemy(application)
 
 # read access key and secret access key from environment variables
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
@@ -36,57 +40,131 @@ glossary_file_key = 'Glossary_for_ratings.yaml'
 glossary = Glossary("Glossary_for_ratings.yaml", s3, bucket_name, glossary_file_key)
 
 
+class GlossaryTerm(db.Model):
+    """A class for the glossary terms"""
+    id = db.Column(db.Integer, primary_key=True)
+    english_term = db.Column(db.String(200), nullable=False)
+    translations = db.relationship("Translation", backref="glossary_term", lazy=True)
+
+    def __repr__(self):
+        return f"<GlossaryTerm {self.english_term}>"
+
+
+class Translation(db.Model):
+    """A class for the translations of the glossary terms"""
+    id = db.Column(db.Integer, primary_key=True)
+    persian_translation = db.Column(db.String(200), nullable=False)
+    rating = db.Column(db.Integer, nullable=False, default=0)
+    rating_no = db.Column(db.Integer, nullable=False, default=0)
+    approved = db.Column(db.Boolean, nullable=False, default=True)
+    glossary_term_id = db.Column(db.Integer, db.ForeignKey("glossary_term.id"), nullable=False)
+
+    def __repr__(self):
+        return f"<Translation {self.persian_translation}>"
+    
+# uncomment the following line to create the database only the first time
+# db.create_all()
+
+
 @application.route("/", methods=["GET", "POST"])
 def index():
     """Home page"""
     if request.method == "POST":
         if "search-term" in request.form:
             term = request.form.get("search-term")
-            translations = glossary.search_dictionary(term)
+            term_entry = GlossaryTerm.query.filter_by(english_term=term).first()
+            if term_entry:
+                translations = term_entry.translations
+            # translations = glossary.search_dictionary(term)
 
-            if translations is None:
-                # find the closest match to the term
-                closest_match = difflib.get_close_matches(
-                    term, glossary.dictionary.keys(), n=1, cutoff=0.6)
-                if closest_match:
-                    similar_term = closest_match[0]
-                    translations = glossary.search_dictionary(similar_term)
-                    return render_template(
-                        "index.html", generate_star_rating=generate_star_rating,
-                        translations=translations, term=similar_term, original_term=term)
+                if translations is None:
+                    # find the closest match to the term
+                    closest_match = difflib.get_close_matches(
+                        term, glossary.dictionary.keys(), n=1, cutoff=0.6)
+                    if closest_match:
+                        similar_term = closest_match[0]
+                        # translations = glossary.search_dictionary(similar_term)
+                        translations = GlossaryTerm.query.filter_by(english_term=similar_term).first().translations
+                        return render_template(
+                            "index.html", generate_star_rating=generate_star_rating,
+                            translations=translations, term=similar_term, original_term=term)
+                    else:
+                        return render_template("index.html", not_found=True, term=term)
                 else:
-                    return render_template("index.html", not_found=True, term=term)
-            else:
-                return render_template(
-                    "index.html", generate_star_rating=generate_star_rating, 
-                    translations=translations, term=term)
+                    return render_template(
+                        "index.html", generate_star_rating=generate_star_rating, 
+                        translations=translations, term=term)
+                
         elif "new-english-term" in request.form and "new-persian-translation" in request.form:
             english_term = request.form.get("new-english-term")
             persian_translation = request.form.get("new-persian-translation")
 
-            if glossary.add_translation(english_term, persian_translation):
+            # cherck the translation and the term are not empty
+            if not english_term or not persian_translation:
+                flash("Please enter a valid term and translation!")
+                return redirect(url_for("index"))
+
+            term_entry = GlossaryTerm.query.filter_by(english_term=english_term).first()
+
+            # check if the translation already exists in the dictionary
+            translation_entry = Translation.query.filter_by(persian_translation=persian_translation).first()
+            if translation_entry:
+                flash("This translation already exists in the dictionary!")
+                return redirect(url_for("index"))
+            else:
+                if term_entry:
+                    glossary_term_id = term_entry.id
+                else:
+                    new_glossary_term = GlossaryTerm(english_term=english_term)
+                    db.session.add(new_glossary_term)
+                    db.session.commit()
+                    glossary_term_id = new_glossary_term.id
+
+                new_translation = Translation(
+                    persian_translation=persian_translation, glossary_term_id=glossary_term_id)
+                db.session.add(new_translation)
+                db.session.commit()
                 flash("Thank you for your contribution!\
                       Your suggestion will be added to the dictionary after approval.")
-            else:
-                flash("This translation alreadys exists in the dictionary or it is not valid!")
-            return redirect(url_for("index"))
-    return render_template("index.html")
+                return redirect(url_for("index"))
+
+    #         if glossary.add_translation(english_term, persian_translation):
+    #             flash("Thank you for your contribution!\
+    #                   Your suggestion will be added to the dictionary after approval.")
+    #         else:
+    #             flash("This translation alreadys exists in the dictionary or it is not valid!")
+    #         return redirect(url_for("index"))
+    # return render_template("index.html")
 
 @application.route("/rate_translation", methods=["POST"])
 def rate_translation():
     """Rate a translation"""
     english_term = request.form.get("term")
     translation_index = request.form.get("translation_index")
-    new_rating = int(request.form.get("new_rating"))
 
-    if new_rating is not None and new_rating in range(0, 6):
-        glossary.update_rating(english_term, translation_index, new_rating)
-        flash("Thank you for your rating!")
-    else:
-        flash("Please select a rating in range 1-5!")
+    term_entry = GlossaryTerm.query.filter_by(english_term=english_term).first()
 
-    return redirect(url_for("index"))
+    if term_entry:
+        translations = term_entry.translations
+        translation = translations[int(translation_index)]
+        translation.rating_no += 1
+        db.session.commit()
+
+        new_rating = int(request.form.get("new_rating"))
+
+        if new_rating is not None and new_rating in range(0, 6):
+            translation.rating = (translation.rating * translation.rating + new_rating) / (translation.rating_no + 1)
+            # round the rating to the nearest 0.5
+            translation.rating = round(translation.rating * 2) / 2
+            db.session.commit()
+            # glossary.update_rating(english_term, translation_index, new_rating)
+            flash("Thank you for your rating!")
+        else:
+            flash("Please select a rating in range 1-5!")
+
+        return redirect(url_for("index"))
 
 
 if __name__ == "__main__":
+    db.create_all()
     application.run(host="0.0.0.0", port=80)
