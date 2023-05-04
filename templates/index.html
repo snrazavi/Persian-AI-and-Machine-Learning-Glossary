@@ -49,7 +49,7 @@
                             {% endfor %}
                         </select>
                         <span class="star-rating" title="Current Rating: {{ translation.rating }}">
-                            {{ generate_star_rating(translation.rating)|safe }}
+                            {{ generate_star_rating(translation.rating)|safe }} ({{ translation.rating_no | default(0) }})
                         </span>
                         <button type="submit" class="btn btn-sm btn-outline-primary">Submit</button>
                     </form>
