@@ -75,12 +75,15 @@ def index():
             term_entry = GlossaryTerm.query.filter_by(english_term=term).first()
             if term_entry:
                 translations = term_entry.translations
+                print(translations)
             # translations = glossary.search_dictionary(term)
 
                 if translations is None:
                     # find the closest match to the term
+                    # closest_match = difflib.get_close_matches(
+                    #     term, glossary.dictionary.keys(), n=1, cutoff=0.6)
                     closest_match = difflib.get_close_matches(
-                        term, glossary.dictionary.keys(), n=1, cutoff=0.6)
+                        term, [glossary_term.english_term for glossary_term in GlossaryTerm.query.all()], n=1, cutoff=0.6)
                     if closest_match:
                         similar_term = closest_match[0]
                         # translations = glossary.search_dictionary(similar_term)
@@ -94,6 +97,8 @@ def index():
                     return render_template(
                         "index.html", generate_star_rating=generate_star_rating, 
                         translations=translations, term=term)
+            else:
+                return render_template("index.html", not_found=True, term=term)
                 
         elif "new-english-term" in request.form and "new-persian-translation" in request.form:
             english_term = request.form.get("new-english-term")
@@ -118,6 +123,7 @@ def index():
                     new_glossary_term = GlossaryTerm(english_term=english_term)
                     db.session.add(new_glossary_term)
                     db.session.commit()
+                    db.session.flush() # to get the id of the new glossary term
                     glossary_term_id = new_glossary_term.id
 
                 new_translation = Translation(
@@ -134,7 +140,7 @@ def index():
     #         else:
     #             flash("This translation alreadys exists in the dictionary or it is not valid!")
     #         return redirect(url_for("index"))
-    # return render_template("index.html")
+    return render_template("index.html")
 
 @application.route("/rate_translation", methods=["POST"])
 def rate_translation():
@@ -166,5 +172,4 @@ def rate_translation():
 
 
 if __name__ == "__main__":
-    db.create_all()
     application.run(host="0.0.0.0", port=80)
