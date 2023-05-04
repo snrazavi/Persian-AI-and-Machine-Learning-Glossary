@@ -72,23 +72,26 @@ def index():
     if request.method == "POST":
         if "search-term" in request.form:
             term = request.form.get("search-term")
+            term = term.strip().lower()
             term_entry = GlossaryTerm.query.filter_by(english_term=term).first()
             if term_entry:
                 translations = term_entry.translations
                 return render_template(
                     "index.html", generate_star_rating=generate_star_rating, 
                     translations=translations, term=term)
-            else:
-                # search for the closest match to the term
-                all_terms = [glossary_term.english_term for glossary_term in GlossaryTerm.query.all()]
-                closest_match = difflib.get_close_matches(term, all_terms, n=1, cutoff=0.6)
-                if closest_match:
-                    similar_term = closest_match[0]
-                    translations = GlossaryTerm.query.filter_by(english_term=similar_term).first().translations
-                    return render_template(
-                        "index.html", generate_star_rating=generate_star_rating,
-                        translations=translations, term=similar_term, original_term=term)
-                return render_template("index.html", not_found=True, term=term)
+            
+            # search for the closest match to the term
+            all_terms = [glossary_term.english_term for glossary_term in GlossaryTerm.query.all()]
+            closest_match = difflib.get_close_matches(term, all_terms, n=1, cutoff=0.6)
+            if closest_match:
+                similar_term = closest_match[0]
+                translations = GlossaryTerm.query.filter_by(english_term=similar_term).first().translations
+                return render_template(
+                    "index.html", generate_star_rating=generate_star_rating,
+                    translations=translations, term=similar_term, original_term=term)
+            
+            # no match found
+            return render_template("index.html", not_found=True, term=term)
                 
         elif "new-english-term" in request.form and "new-persian-translation" in request.form:
             english_term = request.form.get("new-english-term")
