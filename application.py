@@ -2,7 +2,7 @@
 import boto3
 import difflib
 import os
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 from flask import (
     Flask,
     render_template,
@@ -12,10 +12,12 @@ from flask import (
     flash
 )
 
+import openai
+
 from glossary import Glossary
 from helpers import generate_star_rating
 
-# load_dotenv()
+load_dotenv()
 
 
 application = Flask(__name__)
@@ -24,6 +26,9 @@ application.secret_key = "my_unique_secret_key"  # os.environ.get("SECRET_KEY")
 # read access key and secret access key from environment variables
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
+openai.api_key = OPENAI_API_KEY
+
 
 s3 = boto3.client(service_name='s3',
                     aws_access_key_id=AWS_ACCESS_KEY_ID,
@@ -34,6 +39,24 @@ bucket_name = 'snrazavi'
 glossary_file_key = 'Glossary_for_ratings.yaml'
 
 glossary = Glossary("Glossary_for_ratings.yaml", s3, bucket_name, glossary_file_key)
+
+GENERATE_DESCRIPTION = False
+
+def generate_description(term):
+    prompt = f"Write a brief description of the term '{term}' in the\
+               context of AI and Machine Learning in Persian language.\
+               Possibly provide a few links to learn more about the query"
+
+    response = openai.Completion.create(
+        engine="text-davinci-002",
+        prompt=prompt,
+        max_tokens=500,
+        n=1,
+        stop=None,
+        temperature=0.6,
+    )
+
+    return response.choices[0].text.strip()
 
 
 @application.route("/", methods=["GET", "POST"])
@@ -57,9 +80,16 @@ def index():
                 else:
                     return render_template("index.html", not_found=True, term=term)
             else:
-                return render_template(
-                    "index.html", generate_star_rating=generate_star_rating, 
-                    translations=translations, term=term)
+                if GENERATE_DESCRIPTION:
+                    description = generate_description(term)
+                    return render_template(
+                        "index.html", generate_star_rating=generate_star_rating, 
+                        translations=translations, term=term, description=description)
+                else:
+                    return render_template(
+                        "index.html", generate_star_rating=generate_star_rating, 
+                        translations=translations, term=term)
+
         elif "new-english-term" in request.form and "new-persian-translation" in request.form:
             english_term = request.form.get("new-english-term")
             persian_translation = request.form.get("new-persian-translation")
