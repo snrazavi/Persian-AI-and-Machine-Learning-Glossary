@@ -48,7 +48,7 @@ def generate_description(term):
                Possibly provide a few links to learn more about the query"
 
     response = openai.Completion.create(
-        engine="text-davinci-002",
+        engine="text-davinci-003",
         prompt=prompt,
         max_tokens=500,
         n=1,
