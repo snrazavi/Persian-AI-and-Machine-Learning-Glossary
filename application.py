@@ -37,10 +37,9 @@ s3 = boto3.client(service_name='s3',
 
 bucket_name = 'snrazavi'
 glossary_file_key = 'Glossary_for_ratings.yaml'
+GENERATE_DESCRIPTION = False
 
 glossary = Glossary("Glossary_for_ratings.yaml", s3, bucket_name, glossary_file_key)
-
-GENERATE_DESCRIPTION = False
 
 def generate_description(term):
     prompt = f"Write a brief description of the term '{term}' in the\
