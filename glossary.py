@@ -56,6 +56,11 @@ class Glossary:
     def add_translation(self, english_term, persian_translation):
         """Add a new translation to the dictionary"""
         english_term = english_term.lower()
+
+        # check if the translation is a valid entry, not empty
+        if not persian_translation.strip():
+            return False
+        
         new_entry = {"persian": persian_translation, "rating": 0, "approved": False}
 
         for entry in self.dictionary.get(english_term, []):
