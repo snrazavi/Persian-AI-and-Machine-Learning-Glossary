@@ -75,29 +75,19 @@ def index():
             term_entry = GlossaryTerm.query.filter_by(english_term=term).first()
             if term_entry:
                 translations = term_entry.translations
-                print(translations)
-            # translations = glossary.search_dictionary(term)
-
-                if translations is None:
-                    # find the closest match to the term
-                    # closest_match = difflib.get_close_matches(
-                    #     term, glossary.dictionary.keys(), n=1, cutoff=0.6)
-                    closest_match = difflib.get_close_matches(
-                        term, [glossary_term.english_term for glossary_term in GlossaryTerm.query.all()], n=1, cutoff=0.6)
-                    if closest_match:
-                        similar_term = closest_match[0]
-                        # translations = glossary.search_dictionary(similar_term)
-                        translations = GlossaryTerm.query.filter_by(english_term=similar_term).first().translations
-                        return render_template(
-                            "index.html", generate_star_rating=generate_star_rating,
-                            translations=translations, term=similar_term, original_term=term)
-                    else:
-                        return render_template("index.html", not_found=True, term=term)
-                else:
-                    return render_template(
-                        "index.html", generate_star_rating=generate_star_rating, 
-                        translations=translations, term=term)
+                return render_template(
+                    "index.html", generate_star_rating=generate_star_rating, 
+                    translations=translations, term=term)
             else:
+                # search for the closest match to the term
+                all_terms = [glossary_term.english_term for glossary_term in GlossaryTerm.query.all()]
+                closest_match = difflib.get_close_matches(term, all_terms, n=1, cutoff=0.6)
+                if closest_match:
+                    similar_term = closest_match[0]
+                    translations = GlossaryTerm.query.filter_by(english_term=similar_term).first().translations
+                    return render_template(
+                        "index.html", generate_star_rating=generate_star_rating,
+                        translations=translations, term=similar_term, original_term=term)
                 return render_template("index.html", not_found=True, term=term)
                 
         elif "new-english-term" in request.form and "new-persian-translation" in request.form:
