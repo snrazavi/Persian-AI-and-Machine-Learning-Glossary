@@ -46,7 +46,8 @@ def index():
 
             if translations is None:
                 # find the closest match to the term
-                closest_match = difflib.get_close_matches(term, glossary.dictionary.keys(), n=1, cutoff=0.6)
+                closest_match = difflib.get_close_matches(
+                    term, glossary.dictionary.keys(), n=1, cutoff=0.6)
                 if closest_match:
                     similar_term = closest_match[0]
                     translations = glossary.search_dictionary(similar_term)
@@ -64,9 +65,10 @@ def index():
             persian_translation = request.form.get("new-persian-translation")
 
             if glossary.add_translation(english_term, persian_translation):
-                flash("Thank you for your contribution! Your suggestion will be added to the dictionary after approval.")
+                flash("Thank you for your contribution!\
+                      Your suggestion will be added to the dictionary after approval.")
             else:
-                flash("This translation alreadys exists in the dictionary!")
+                flash("This translation alreadys exists in the dictionary or it is not valid!")
             return redirect(url_for("index"))
     return render_template("index.html")
 
