@@ -38,7 +38,7 @@
             <ul class="list-group">
                 {% for translation in translations %}
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    {{ translation.persian }}
+                    {{ translation.persian_translation }}
                     <form action="/rate_translation" method="post" class="d-inline">
                         <input type="hidden" name="term" value="{{ term }}">
                         <input type="hidden" name="translation_index" value="{{ loop.index0 }}">
