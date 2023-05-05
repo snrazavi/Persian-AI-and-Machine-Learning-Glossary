@@ -1,8 +1,10 @@
 """This is the main application file for the Persian-English glossary web app."""
 from flask import Flask
+from flask_login import LoginManager
 from models.glossary_term import db
-from views.routes import main
 from config import Config
+from views.routes import main
+from views.auth_utils import login_manager
 
 
 def create_app(config_class=Config):
@@ -16,6 +18,8 @@ def create_app(config_class=Config):
 
 
 application = create_app(Config)
+login_manager.login_view = "main.login"
+login_manager.init_app(application)
 
 
 if __name__ == "__main__":

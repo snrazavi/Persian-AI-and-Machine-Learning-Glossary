@@ -7,13 +7,19 @@ from flask import (
     url_for,
     flash)
 
+from flask_login import login_user, logout_user, login_required, current_user
+from admin_user import AdminUser
+
 from views.helpers import (
     generate_star_rating,
     search_glossary_term,
     submit_new_translation,
     update_translation_rating)
 
-from models.glossary_term import GlossaryTerm
+from models.glossary_term import GlossaryTerm, db
+from models.translation import Translation
+from views.auth_utils import admin_required, login_manager
+from config import Config
 
 
 main = Blueprint("main", __name__)
@@ -75,4 +81,64 @@ def rate_translation():
     update_translation_rating(term_entry, translation_index, new_rating)
     flash("Thank you for your feedback!")
 
+    return redirect(url_for("main.index"))
+
+@main.route("/admin", methods=["GET", "POST"])
+@login_required
+def admin():
+    """Admin page"""
+    if request.method == "POST":
+        action = request.form.get("action")
+        translation_id = request.form.get("translation_id")
+        translation = Translation.query.get(translation_id)
+
+        if action == "approve":
+            translation.approved = True
+            db.session.commit()
+            flash(f"Translation ID {translation_id} approved.")
+        elif action == "delete":
+            db.session.delete(translation)
+            db.session.commit()
+            flash(f"Translation ID {translation_id} deleted.")
+        elif action == "edit":
+            new_translation = request.form.get("new_translation")
+            translation.persian_translation = new_translation
+            db.session.commit()
+            flash(f"Translation ID {translation_id} updated.")
+        else:
+            flash("Invalid action.")
+        return redirect(url_for("main.admin"))
+
+    unapproved_translations = Translation.query.filter_by(approved=False).all()
+    return render_template("admin.html", translations=unapproved_translations)
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    """Load user"""
+    if user_id == "admin":
+        return AdminUser()
+    return None
+
+
+@main.route("/login", methods=["GET", "POST"])
+def login():
+    """Login page"""
+    if request.method == "POST":
+        password = request.form.get("password")
+        if password == Config.ADMIN_PASSWORD:
+            admin_user = AdminUser()
+            login_user(admin_user)
+            flash("Logged in successfully.")
+            return redirect(url_for("main.admin"))
+        else:
+            flash("Incorrect password.")
+    return render_template("login.html")
+
+@main.route("/logout")
+@login_required
+def logout():
+    """Logout page"""
+    logout_user()
+    flash("Logged out successfully.")
     return redirect(url_for("main.index"))

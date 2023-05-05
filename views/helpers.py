@@ -81,7 +81,6 @@ def update_translation_rating(term_entry, original_index, new_rating):
     db.session.commit()
 
 
-
 def generate_star_rating(rating):
     """Generate a star rating based on the rating"""
     full_star = '<i class="fas fa-star"></i>'

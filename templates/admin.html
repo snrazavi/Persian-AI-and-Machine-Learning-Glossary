@@ -1,0 +1,23 @@
+<!-- templates/admin.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Admin Panel</h2>
+<p>Logged in as: {{ current_user.id }}</p>
+<a href="{{ url_for('main.logout') }}">Logout</a>
+
+{% for translation in translations %}
+    <div>
+        <h4>{{ translation.glossary_term.english_term }}</h4>
+        <p>{{ translation.persian_translation }} (ID: {{ translation.id }})</p>
+        <form method="POST">
+            <input type="hidden" name="translation_id" value="{{ translation.id }}">
+            <input type="submit" name="action" value="approve">
+            <input type="submit" name="action" value="delete">
+            <label for="new_translation">Edit translation:</label>
+            <input type="text" name="new_translation" value="{{ translation.persian_translation }}">
+            <input type="submit" name="action" value="edit">
+        </form>
+    </div>
+{% endfor %}
+{% endblock %}
