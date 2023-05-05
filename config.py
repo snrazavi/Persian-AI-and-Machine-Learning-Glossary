@@ -1,10 +1,10 @@
 """This file contains the configuration for the Flask app."""
 import os
 from dataclasses import dataclass
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 
-# load_dotenv()
+load_dotenv()
 
 
 @dataclass
