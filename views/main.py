@@ -72,15 +72,17 @@ def submit_new_translation(english_term: str, persian_translation: str):
     return True
 
 
-def update_translation_rating(term_entry, translation_index, new_rating):
+def update_translation_rating(term_entry, original_index, new_rating):
     """Update the rating of a translation.
 
     :param translation: the translation to update
     :type translation: Translation
+    :param original_index: the index of the translation in the list of translations
+    :type original_index: int
     :param new_rating: the new rating
     :type new_rating: int
     """
-    translation = term_entry.translations[int(translation_index)]
+    translation = term_entry.translations[int(original_index)]
     updated_rating = (translation.rating * translation.rating_no + new_rating) / (translation.rating_no + 1)
 
     # round the rating to the nearest 0.5
