@@ -1,5 +1,7 @@
 """ This script is used to migrate the glossary data from the YAML file to the database. """
-from application import db, GlossaryTerm, Translation, application
+from application import application
+from models.glossary_term import GlossaryTerm, db
+from models.translation import Translation
 import yaml
 
 # Load the YAML file
