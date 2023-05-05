@@ -1,19 +1,7 @@
-"""This module contains the main blueprint for the application."""
+"""Helper functions for the application"""
 import difflib
-from flask import (
-    Blueprint,
-    render_template,
-    request,
-    redirect,
-    url_for,
-    flash
-)
-
 from models.glossary_term import GlossaryTerm, db
 from models.translation import Translation
-from helpers import generate_star_rating
-
-main = Blueprint("main", __name__)
 
 
 def search_glossary_term(glossary_term: str):
@@ -93,60 +81,16 @@ def update_translation_rating(term_entry, original_index, new_rating):
     db.session.commit()
 
 
-@main.route("/", methods=["GET", "POST"])
-def index():
-    """Home page"""
-    if request.method == "POST":
-        if "search-term" in request.form:
-            term = request.form.get("search-term").strip().lower()
-            result = search_glossary_term(term)
 
-            if result:
-                if isinstance(result, tuple):
-                    translations, similar_term = result
-                    return render_template(
-                        "index.html", generate_star_rating=generate_star_rating,
-                        translations=translations, term=similar_term, original_term=term)
+def generate_star_rating(rating):
+    """Generate a star rating based on the rating"""
+    full_star = '<i class="fas fa-star"></i>'
+    empty_star = '<i class="far fa-star"></i>'
+    half_star = '<i class="fas fa-star-half-alt"></i>'
 
-                translations = result
-                return render_template(
-                    "index.html", generate_star_rating=generate_star_rating,
-                    translations=translations, term=term)
+    full_stars = int(rating)
+    half_stars = 1 if rating - full_stars >= 0.5 else 0
+    empty_stars = 5 - full_stars - half_stars
 
-            return render_template("index.html", not_found=True, term=term)
-
-        if "new-english-term" in request.form and "new-persian-translation" in request.form:
-            english_term = request.form.get("new-english-term").strip().lower()
-            persian_translation = request.form.get("new-persian-translation").strip()
-
-            # cherck the translation and the term are not empty
-            if not english_term or not persian_translation:
-                flash("Please enter a valid term and translation!")
-                return redirect(url_for("main.index"))
-
-            if submit_new_translation(english_term, persian_translation):
-                flash("Thank you for your contribution!\
-                      Your suggestion will be added to the dictionary after approval.")
-            else:
-                flash("This translation already exists in the dictionary!")
-            return redirect(url_for("main.index"))
-
-    return render_template("index.html")
-
-
-@main.route("/rate_translation", methods=["POST"])
-def rate_translation():
-    """Rate a translation"""
-    english_term = request.form.get("term").strip().lower()
-    translation_index = request.form.get("original_index")
-    new_rating = int(request.form.get("new_rating"))
-
-    if new_rating is None or new_rating not in range(0, 6):
-        flash("Please select a rating in range 0-5!")
-        return redirect(url_for("main.index"))
-
-    term_entry = GlossaryTerm.query.filter_by(english_term=english_term).first()
-    update_translation_rating(term_entry, translation_index, new_rating)
-    flash("Thank you for your feedback!")
-
-    return redirect(url_for("main.index"))
+    star_rating = full_star * full_stars + half_star * half_stars + empty_star * empty_stars
+    return star_rating
