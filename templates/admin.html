@@ -2,22 +2,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Admin Panel</h2>
-<p>Logged in as: {{ current_user.id }}</p>
-<a href="{{ url_for('main.logout') }}">Logout</a>
+<div class="container">
+    <h2 class="my-4">Admin Panel</h2>
+    <p>Logged in as: {{ current_user.id }}</p>
+    <a href="{{ url_for('main.logout') }}" class="btn btn-danger mb-3">Logout</a>
 
-{% for translation in translations %}
-    <div>
-        <h4>{{ translation.glossary_term.english_term }}</h4>
-        <p>{{ translation.persian_translation }} (ID: {{ translation.id }})</p>
-        <form method="POST">
-            <input type="hidden" name="translation_id" value="{{ translation.id }}">
-            <input type="submit" name="action" value="approve">
-            <input type="submit" name="action" value="delete">
-            <label for="new_translation">Edit translation:</label>
-            <input type="text" name="new_translation" value="{{ translation.persian_translation }}">
-            <input type="submit" name="action" value="edit">
-        </form>
-    </div>
-{% endfor %}
+    {% for translation in translations %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="card-title">{{ translation.glossary_term.english_term }}</h4>
+                <p class="card-text">{{ translation.persian_translation }} (ID: {{ translation.id }})</p>
+                <form method="POST" class="d-inline">
+                    <input type="hidden" name="translation_id" value="{{ translation.id }}">
+                    <button type="submit" name="action" value="approve" class="btn btn-success">Approve</button>
+                    <button type="submit" name="action" value="delete" class="btn btn-danger">Delete</button>
+                </form>
+                <form method="POST" class="d-inline">
+                    <input type="hidden" name="translation_id" value="{{ translation.id }}">
+                    <div class="input-group mt-2">
+                        <label class="input-group-text" for="new_translation">Edit translation:</label>
+                        <input type="text" name="new_translation" value="{{ translation.persian_translation }}" class="form-control">
+                        <button type="submit" name="action" value="edit" class="btn btn-primary">Edit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    {% endfor %}
+</div>
 {% endblock %}
