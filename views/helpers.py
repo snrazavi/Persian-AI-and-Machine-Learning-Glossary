@@ -54,7 +54,7 @@ def submit_new_translation(english_term: str, persian_translation: str):
         glossary_term_id = new_glossary_term.id
 
     new_translation = Translation(
-        persian_translation=persian_translation, glossary_term_id=glossary_term_id)
+        persian_translation=persian_translation, glossary_term_id=glossary_term_id, approved=False)
     db.session.add(new_translation)
     db.session.commit()
     return True
