@@ -72,6 +72,25 @@ def submit_new_translation(english_term: str, persian_translation: str):
     return True
 
 
+def update_translation_rating(term_entry, translation_index, new_rating):
+    """Update the rating of a translation.
+
+    :param translation: the translation to update
+    :type translation: Translation
+    :param new_rating: the new rating
+    :type new_rating: int
+    """    
+    translation = term_entry.translations[int(translation_index)]
+    translation.rating = (translation.rating * translation.rating_no + new_rating) / (translation.rating_no + 1)
+
+    # round the rating to the nearest 0.5
+    translation.rating = round(translation.rating * 2) / 2
+    db.session.commit()
+
+    translation.rating_no += 1
+    db.session.commit()
+
+
 @main.route("/", methods=["GET", "POST"])
 def index():
     """Home page"""
@@ -118,24 +137,14 @@ def rate_translation():
     """Rate a translation"""
     english_term = request.form.get("term").strip().lower()
     translation_index = request.form.get("translation_index")
+    new_rating = int(request.form.get("new_rating"))
+
+    if new_rating is None or new_rating not in range(0, 6):
+        flash("Please select a rating in range 0-5!")
+        return redirect(url_for("main.index"))
 
     term_entry = GlossaryTerm.query.filter_by(english_term=english_term).first()
+    update_translation_rating(term_entry, translation_index, new_rating)
+    flash("Thank you for your feedback!")
 
-    if term_entry:
-        translations = term_entry.translations
-        translation = translations[int(translation_index)]
-        translation.rating_no += 1
-        db.session.commit()
-
-        new_rating = int(request.form.get("new_rating"))
-
-        if new_rating is not None and new_rating in range(0, 6):
-            translation.rating = (translation.rating * translation.rating + new_rating) / (translation.rating_no + 1)
-            # round the rating to the nearest 0.5
-            translation.rating = round(translation.rating * 2) / 2
-            db.session.commit()
-            flash("Thank you for your rating!")
-        else:
-            flash("Please select a rating in range 1-5!")
-
-        return redirect(url_for("main.index"))
+    return redirect(url_for("main.index"))
