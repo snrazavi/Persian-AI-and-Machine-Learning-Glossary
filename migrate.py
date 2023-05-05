@@ -7,7 +7,7 @@ with open("Glossary_for_ratings.yaml", "r", encoding="utf-8") as f:
     glossary_data = yaml.safe_load(f)
 
 with application.app_context():
-    db.create_all() # only create the tables if they don't exist
+    # db.create_all() # only create the tables if they don't exist
     # Iterate through the YAML data and create Term and Translation objects
     for english_term, translations in glossary_data.items():
 
@@ -28,8 +28,9 @@ with application.app_context():
                 print(e)
                 print(translation)
                 print(english_term)
-
+        
         print(f"Added {english_term} to the database")
+
 
     # Commit the changes to the database
     db.session.commit()
