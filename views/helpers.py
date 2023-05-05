@@ -16,7 +16,8 @@ def search_glossary_term(glossary_term: str):
     """
     term_entry = GlossaryTerm.query.filter_by(english_term=glossary_term).first()
     if term_entry:
-        return sorted(enumerate(term_entry.translations), key=lambda t: t[1].rating, reverse=True)
+        translations = [translation for translation in term_entry.translations if translation.approved]
+        return sorted(enumerate(translations), key=lambda t: t[1].rating, reverse=True)
 
     # search for the closest match to the term
     all_terms = [glossary_term.english_term for glossary_term in GlossaryTerm.query.all()]
@@ -24,6 +25,8 @@ def search_glossary_term(glossary_term: str):
     if closest_match:
         similar_term = closest_match[0]
         translations = GlossaryTerm.query.filter_by(english_term=similar_term).first().translations
+        # only return approved translations
+        translations = [translation for translation in translations if translation.approved]
         return sorted(enumerate(translations), key=lambda t: t[1].rating, reverse=True), similar_term
 
     # no match found

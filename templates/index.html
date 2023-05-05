@@ -13,8 +13,19 @@
         {% if translations %}
         <div>
             {% if original_term %}
-            <p>Term <em>"{{ original_term }}"</em> not found. Showing results for the most similar term:</p>
+            <p>Term <em>"{{ original_term }}"</em> not found.</p>
+            <div>
+                <h4>You can add the term "{{ original_term }}" and your suggested translation:</h4>
+                <form action="/" method="post" class="mb-3">
+                    <input type="hidden" name="new-english-term" value="{{ original_term }}">
+                    <div class="input-group">
+                        <input type="text" name="new-persian-translation" class="form-control" placeholder="Persian translation...">
+                        <button type="submit" class="btn btn-primary">Add Translation</button>
+                    </div>
+                </form>
+            </div>
             {% endif %}
+            <p>Showing results for the most similar term:</p>
             <h3>{{ term }}:</h3>
             <ul class="list-group">
                 {% for original_index, translation in translations %}
@@ -44,8 +55,8 @@
                 <input type="text" name="new-persian-translation" class="form-control" placeholder="Suggest a better Persian translation...">
                 <button type="submit" class="btn btn-primary">Suggest Translation</button>
             </div>
-        </form>        
-        {% elif not_found %}
+        </form>
+       {% elif not_found %}
         <p>No results found for "{{ term }}".</p>
         <h4>Add this term and its translation to the dictionary:</h4>
         <form action="/" method="post" class="mb-3">
