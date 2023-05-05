@@ -1,8 +1,6 @@
 """This is the main application file for the Persian-English glossary web app."""
-import boto3
 import difflib
 import os
-# from dotenv import load_dotenv
 from flask import (
     Flask,
     render_template,
@@ -16,14 +14,20 @@ from flask_sqlalchemy import SQLAlchemy
 from glossary import Glossary
 from helpers import generate_star_rating
 
-# load_dotenv()
-
+# load RDS credentials from environment variables
+RDS_USERNAME = os.environ.get('RDS_USERNAME')
+RDS_PASSWORD = os.environ.get('RDS_PASSWORD')
+RDS_ENDPOINT = os.environ.get('RDS_ENDPOINT')
+RDS_PORT = os.environ.get('RDS_PORT')
+RDS_DB_NAME = os.environ.get('RDS_DB_NAME')
 
 application = Flask(__name__)
 application.secret_key = "my_unique_secret_key"  # os.environ.get("SECRET_KEY")
-application.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///glossary.db"
+# application.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///glossary.db"
+application.config["SQLALCHEMY_DATABASE_URI"] = f"mysql+mysqlconnector://{RDS_USERNAME}:{RDS_PASSWORD}@{RDS_ENDPOINT}:{RDS_PORT}/{RDS_DB_NAME}"
 application.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(application)
+
 
 # read access key and secret access key from environment variables
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
@@ -50,9 +54,6 @@ class Translation(db.Model):
 
     def __repr__(self):
         return f"<Translation {self.persian_translation}>"
-    
-# uncomment the following line to create the database only the first time
-# db.create_all()
 
 
 @application.route("/", methods=["GET", "POST"])
@@ -82,7 +83,7 @@ def index():
             # no match found
             return render_template("index.html", not_found=True, term=term)
                 
-        elif "new-english-term" in request.form and "new-persian-translation" in request.form:
+        if "new-english-term" in request.form and "new-persian-translation" in request.form:
             english_term = request.form.get("new-english-term")
             persian_translation = request.form.get("new-persian-translation")
 
@@ -116,12 +117,6 @@ def index():
                       Your suggestion will be added to the dictionary after approval.")
                 return redirect(url_for("index"))
 
-    #         if glossary.add_translation(english_term, persian_translation):
-    #             flash("Thank you for your contribution!\
-    #                   Your suggestion will be added to the dictionary after approval.")
-    #         else:
-    #             flash("This translation alreadys exists in the dictionary or it is not valid!")
-    #         return redirect(url_for("index"))
     return render_template("index.html")
 
 @application.route("/rate_translation", methods=["POST"])
@@ -154,4 +149,6 @@ def rate_translation():
 
 
 if __name__ == "__main__":
+    # with application.app_context():
+    #     db.create_all()
     application.run(host="0.0.0.0", port=80)
