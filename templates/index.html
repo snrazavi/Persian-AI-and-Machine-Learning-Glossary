@@ -36,12 +36,12 @@
             {% endif %}
             <h3>{{ term }}:</h3>
             <ul class="list-group">
-                {% for translation in translations %}
+                {% for original_index, translation in translations %}
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     {{ translation.persian_translation }}
                     <form action="/rate_translation" method="post" class="d-inline">
                         <input type="hidden" name="term" value="{{ term }}">
-                        <input type="hidden" name="translation_index" value="{{ loop.index0 }}">
+                        <input type="hidden" name="original_index" value="{{ original_index }}">
                         <select name="new_rating" class="form-select form-select-sm d-inline" style="width: auto;">
                             <option value="0" disabled selected>Rate</option>
                             {% for rating in range(0, 6) %}
@@ -54,39 +54,6 @@
                         <button type="submit" class="btn btn-sm btn-outline-primary">Submit</button>
                     </form>
                 </li>
-                <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
-                    {{ translation.persian }}
-                    <span class="star-rating" title="Rating: {{ translation.rating }}">
-                        {{ generate_star_rating(translation.rating)|safe }}
-                    </span>
-                    <form action="/" method="post" class="d-inline">
-                        <input type="hidden" name="term" value="{{ term }}">
-                        <input type="hidden" name="translation_index" value="{{ loop.index0 }}">
-                        <input type="hidden" name="rating_change" value="1">
-                        <button type="submit" class="btn btn-sm btn-outline-primary">+</button>
-                    </form>
-                    <form action="/" method="post" class="d-inline">
-                        <input type="hidden" name="term" value="{{ term }}">
-                        <input type="hidden" name="translation_index" value="{{ loop.index0 }}">
-                        <input type="hidden" name="rating_change" value="-1">
-                        <button type="submit" class="btn btn-sm btn-outline-primary">-</button>
-                    </form>
-                </li> -->
-                <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
-                    {{ translation.persian }} ({{ translation.rating }})
-                    <form action="/rate_translation" method="post">
-                        <input type="hidden" name="english_term" value="{{ term }}">
-                        <input type="hidden" name="persian_translation" value="{{ translation.persian }}">
-                        <select name="rating" class="form-select form-select-sm">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        <button type="submit" class="btn btn-sm btn-outline-primary ms-2">Rate</button>
-                    </form>
-                </li> -->
                 {% endfor %}
             </ul>
         </div>

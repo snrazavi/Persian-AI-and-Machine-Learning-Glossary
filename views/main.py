@@ -28,7 +28,7 @@ def search_glossary_term(glossary_term: str):
     """
     term_entry = GlossaryTerm.query.filter_by(english_term=glossary_term).first()
     if term_entry:
-        return term_entry.translations
+        return sorted(enumerate(term_entry.translations), key=lambda t: t[1].rating, reverse=True)
 
     # search for the closest match to the term
     all_terms = [glossary_term.english_term for glossary_term in GlossaryTerm.query.all()]
@@ -36,7 +36,7 @@ def search_glossary_term(glossary_term: str):
     if closest_match:
         similar_term = closest_match[0]
         translations = GlossaryTerm.query.filter_by(english_term=similar_term).first().translations
-        return translations, similar_term
+        return sorted(enumerate(translations), key=lambda t: t[1].rating, reverse=True), similar_term
 
     # no match found
     return None
@@ -79,12 +79,12 @@ def update_translation_rating(term_entry, translation_index, new_rating):
     :type translation: Translation
     :param new_rating: the new rating
     :type new_rating: int
-    """    
+    """
     translation = term_entry.translations[int(translation_index)]
-    translation.rating = (translation.rating * translation.rating_no + new_rating) / (translation.rating_no + 1)
+    updated_rating = (translation.rating * translation.rating_no + new_rating) / (translation.rating_no + 1)
 
     # round the rating to the nearest 0.5
-    translation.rating = round(translation.rating * 2) / 2
+    translation.rating = round(updated_rating * 2) / 2
     db.session.commit()
 
     translation.rating_no += 1
@@ -136,7 +136,7 @@ def index():
 def rate_translation():
     """Rate a translation"""
     english_term = request.form.get("term").strip().lower()
-    translation_index = request.form.get("translation_index")
+    translation_index = request.form.get("original_index")
     new_rating = int(request.form.get("new_rating"))
 
     if new_rating is None or new_rating not in range(0, 6):
