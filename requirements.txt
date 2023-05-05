@@ -19,7 +19,11 @@ Jinja2==3.1.2
 jmespath==1.0.1
 MarkupSafe==2.1.2
 multidict==6.0.4
+mysql-connector-python==8.0.33
 openai==0.27.6
+protobuf==3.20.3
+psycopg2==2.9.6
+PyMySQL==1.0.3
 python-dateutil==2.8.2
 python-dotenv==1.0.0
 PyYAML==6.0
