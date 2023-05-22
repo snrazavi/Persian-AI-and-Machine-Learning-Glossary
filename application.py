@@ -1,6 +1,5 @@
 """This is the main application file for the Persian-English glossary web app."""
 from flask import Flask
-from flask_login import LoginManager
 from models.glossary_term import db
 from config import Config
 from views.routes import main
